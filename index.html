@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Felippe's website</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' type='text/css' media='screen' href='base.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body onload="myFunction()" style="margin: 0;">
+    <div class="menu">
+        <div id="preLoader" class="preLoad"></div>
+        <div id="Home" class="split left">
+            <div class="centered">
+                <p id="movingP1" class="he">HE</p>
+
+            </div>
+            <div id="myNav" class="overlay">
+                <div class="overlay-content">
+                    <a href="#Home">Home</a>
+                    <a href="#AboutMe">About</a>
+                    <a href="#">Projects</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+            <span id="myBar" class="container" onclick="clickDiv(), animationFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </span>
+        </div>
+
+        <div class="split right">
+            <div class="centered">
+                <p id="movingP2" class="llo">LLO</p>
+            </div>
+            <div class="boxapps">
+                <div onscroll="moveP()" class="vertical">
+                    <div class="stickyicon-list">
+                        <a href="https://www.linkedin.com/in/felippe-nagy-1160bb204/" target="_blank" class="linkedin">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/Felippefn" target="_blank" class="github">
+                            <i class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--<div id="AboutMe" class="center"> 
+
+            <h1> About me</h1>
+        </div>
+        -->
+        <div class="arrow">
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </div>
+        <div id="box" class="box">
+            <div class="b b1"></div>
+            <div class="b b2"></div>
+            <div class="b b3"></div>
+            <div class="b b4"></div>
+        </div>
+    </div>
+</body>
+<script src='animationWB.js'></script>
+
+</html>
