@@ -2,9 +2,10 @@ function animationFunction(x) {
     x.classList.toggle("change");
 
 }
+
 function openNav() {
     document.getElementById("myNav").style.width = "15%";
-    document.getElementById("myNav").style.height = "30%";
+    document.getElementById("myNav").style.height = "40vh";
 }
 
 function closeNav() {
@@ -25,8 +26,6 @@ function clickDiv() {
 }
 /*var He = document.getElementById("movingP1");
 var Llo = document.getElementById("movingP2");
-
-
 //He.style.marginLeft = He1;
 //Llo.style.marginRight = Llo1;
 //window.addEventListener("scroll", moveP);
@@ -34,7 +33,6 @@ var Llo = document.getElementById("movingP2");
 //  var scrollpercent = (document.body.scrollTop + document.documentElement.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
 //  var move = Llo1 * scrollpercent; 
 //}
-
 ///(function ($) {
 ///    'use strict';
 //    $(window).on('load', function () {
@@ -46,7 +44,7 @@ var Llo = document.getElementById("movingP2");
 var myVar;
 
 function myFunction() {
-    myVar = setTimeout(showPage, 3000);
+    myVar = setTimeout(showPage, 300);
 }
 
 function showPage() {
