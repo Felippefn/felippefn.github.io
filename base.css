@@ -2,7 +2,7 @@ body {
     font-family: 'montserratlight';
     font-size: 80px;
     margin: 0;
-    background-color: darkcyan;
+    background-color: #008b8b;
     height: 100%;
     width: 100%;
     overflow-x: hidden;
@@ -82,7 +82,7 @@ h1 {
     animation: slidein 4s none;
     top: 25%;
     position: relative;
-    color: black;
+    color: #140021;
     left: 16vw;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.12), 2px 2px 2px rgba(0, 0, 0, 0.12), 3px 3px 3px rgba(0, 0, 0, 0.12), 4px 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.12);
 }
@@ -102,7 +102,7 @@ h1 {
     position: absolute;
     float: right;
     right: 0;
-    background-color: black;
+    background-color: #140021;
 }
 
 .llo {
@@ -112,23 +112,55 @@ h1 {
     position: relative;
     color: #02C3BD;
     right: 16vw;
-    /*text-shadow: 
-        1px 1px 1px rgba(0,0,0,0.12), 
-        2px 2px 2px rgba(0,0,0,0.12),
-        3px 3px 3px rgba(0,0,0,0.12),
-        4px 4px 4px rgba(0,0,0,0.12), 
-        0 8px 8px rgba(0,0,0,0.12),
-        0 16px 16px rgba(0,0,0,0.12); 
-    */
 }
+
 @media only screen and (max-device-width: 900px) {
     body{
         font-size: 60px;
     }
-    .he { left: 10vw !important;} 
-    .llo {right: 6vw !important;}
+    .he {left: 10vw !important;
+    font-size: 80px;} 
+    .llo {right: 6vw !important;
+    font-size: 80px;}
+    .left
+    {
+        position: absolute;
+        height: 30vh;
+        width: 70vw;
+        margin-left: 8%;
+        margin-top: 25%;
+        z-index: 2;
+    }
+    .right {
+        position: absolute;
+        height: 30vh;
+        width: 70vw;
+        top: 55%;
+        margin-right: 12%;
+    }
+    .container {
+        animation: jumping 1s 3s;
+        z-index: 1;
+        margin-left: 2%;
+        margin-top: 5%;
+        position: fixed;
+        display: inline-block;
+        cursor: pointer;
+    }
+    .bar1, .bar2, .bar3 {
+        width: 15vw;
+        height: 55vh;
+        background-color: white;
+        margin: 6px 0;
+        transition: 0.4s;
+        box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.12);
+    }
 }
+#myNav{
+    position: absolute;
 
+}
 @keyframes slideout {
     from {
         margin-right: 15cm;
@@ -148,25 +180,25 @@ h1 {
 }
 
 .container {
-    animation: jumping 1.5s infinite;
+    /* animation: jumping 1s 3s; */
     z-index: 1;
     margin-left: 2%;
     position: fixed;
     display: inline-block;
     cursor: pointer;
 }
-
+/* 
 @keyframes jumping {
     from {
-        margin-top: -5px;
+        margin-top: 0px;
     }
     50% {
         margin-top: 5px;
     }
     to {
-        margin-top: -5px;
+        margin-top: 0px;
     }
-}
+} */
 
 .bar1, .bar2, .bar3 {
     width: 35px;
@@ -232,6 +264,7 @@ h1 {
 }
 
 .overlay {
+    position: relative;
     height: 0%;
     margin-top: 3.35%;
     margin-left: 4%;
