@@ -14,24 +14,24 @@
 <body onload="myFunction()" style="margin: 0;">
     <div class="menu">
         <div id="preLoader" class="preLoad"></div>
+        <span id="myBar" class="container" onclick="clickDiv(), animationFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </span>
+        <div id="myNav" class="overlay">
+            <div class="overlay-content">
+                <a href="#Home">Home</a>
+                <a href="#AboutMe">About</a>
+                <a href="#">Projects</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
         <div id="Home" class="split left">
             <div class="centered">
                 <p id="movingP1" class="he">HE</p>
 
             </div>
-            <div id="myNav" class="overlay">
-                <div class="overlay-content">
-                    <a href="#Home">Home</a>
-                    <a href="#AboutMe">About</a>
-                    <a href="#">Projects</a>
-                    <a href="#">Contact</a>
-                </div>
-            </div>
-            <span id="myBar" class="container" onclick="clickDiv(), animationFunction(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </span>
         </div>
 
         <div class="split right">
@@ -53,7 +53,6 @@
             </div>
         </div>
         <!--<div id="AboutMe" class="center"> 
-
             <h1> About me</h1>
         </div>
         -->
