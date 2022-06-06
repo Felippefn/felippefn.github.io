@@ -2,7 +2,7 @@
 Website.
 
 
-Git flow :
+Git flow:
 
 - fix: :wrench: "message" -> To fix some bug or tool.
 - feat: :fireworks: "message" -> To new features to our code.
