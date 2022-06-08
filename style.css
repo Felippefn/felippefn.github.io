@@ -76,17 +76,25 @@ a:hover {
 li {
   display: inline;
 }
+#home_pg{
+  z-index: 4;
+  top: 1%;
+  left: 50%;
+  position: absolute;
+}
 .he {
-  top: 10%;
+  transform: rotate(-11deg);
+  top: 8%;
   position: absolute;
   color: white;
   /* color: #140021; */
-  left: 10vw;
+  left: 15vw;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.12), 2px 2px 2px rgba(0, 0, 0, 0.12),
     3px 3px 3px rgba(0, 0, 0, 0.12), 4px 4px 4px rgba(0, 0, 0, 0.12),
     0 8px 8px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.12);
 }
 .llo {
+  transform: rotate(11deg);
   top: 25%;
   position: absolute;
   color: white;
@@ -97,11 +105,28 @@ li {
     0 8px 8px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.12);
 }
 
+#diag_layout{
+  transform: rotate(-15deg);
+  z-index: 0;
+  top: 20%;
+  left: -10%;
+  background-color: white;
+  width: 170%;
+  height: 40%;
+  position: absolute;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+              0 2px 2px rgba(0,0,0,0.11), 
+              0 4px 4px rgba(0,0,0,0.11), 
+              0 8px 8px rgba(0,0,0,0.11), 
+              0 16px 16px rgba(0,0,0,0.11), 
+              0 32px 32px rgba(0,0,0,0.11);
+}
+
+
 #words {
   top: 25%;
   left: 40%;
   position: absolute;
-  border-color: black;
   width: 25%;
   height: 20%;
 }
@@ -115,7 +140,7 @@ li {
 }
 
 .name {
-  color: aliceblue;
+  color: black;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.12), 2px 2px 2px rgba(0, 0, 0, 0.12),
     3px 3px 3px rgba(0, 0, 0, 0.12), 4px 4px 4px rgba(0, 0, 0, 0.12),
     0 8px 8px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.12);
@@ -124,7 +149,7 @@ li {
 
 .specs {
   opacity: 0.8;
-  color: #f6b93b;
+  color: black;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.12), 2px 2px 2px rgba(0, 0, 0, 0.12),
     3px 3px 3px rgba(0, 0, 0, 0.12), 4px 4px 4px rgba(0, 0, 0, 0.12),
     0 8px 8px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.12);
@@ -167,6 +192,11 @@ li {
   position: relative;
   right: -24.2cm;
   margin-top: 20%;
+}
+
+.boxCtt{
+  position: absolute;
+  bottom: -80%;
 }
 
 .arrow {
