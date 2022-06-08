@@ -41,11 +41,6 @@ var Llo = document.getElementById("movingP2");
         }
     });
 })(jQuery)*/
-var myVar;
-
-function myFunction() {
-    myVar = setTimeout(showPage, 300);
-}
 
 function showPage() {
     document.getElementById("box").style.opacity = 0;
