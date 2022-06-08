@@ -3,27 +3,27 @@ function animationFunction(x) {
 
 }
 
-function openNav() {
-    document.getElementById("myNav").style.width = "15%";
-    document.getElementById("myNav").style.height = "40vh";
-}
+// function openNav() {
+//     document.getElementById("myNav").style.width = "15%";
+//     document.getElementById("myNav").style.height = "40vh";
+// }
 
-function closeNav() {
-    document.getElementById("myNav").style.width = "0%";
-    document.getElementById("myNav").style.height = "0%";
-}
-var open = false;
-function clickDiv() {
+// function closeNav() {
+//     document.getElementById("myNav").style.width = "0%";
+//     document.getElementById("myNav").style.height = "0%";
+// }
+// var open = false;
+// function clickDiv() {
 
-    if (open) {
-        closeNav();
-        open = false;
-    }
-    else {
-        openNav();
-        open = true;
-    }
-}
+//     if (open) {
+//         closeNav();
+//         open = false;
+//     }
+//     else {
+//         openNav();
+//         open = true;
+//     }
+// }
 /*var He = document.getElementById("movingP1");
 var Llo = document.getElementById("movingP2");
 //He.style.marginLeft = He1;
@@ -53,5 +53,9 @@ function showPage() {
     document.getElementById("preLoader").style.height = "0%";
 }
 window.addEventListener('scroll', () => {
-  console.log('Scrolled!');
+    console.log('Scrolled!');
+    var value = -10 + window.scrollY / 40;
+    if (value >= 10) {
+        value = 10;
+    }
 })
