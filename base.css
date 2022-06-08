@@ -63,7 +63,7 @@ a {
   padding-left: 15px;
   opacity: 0.7;
   transition: 0.3s;
-  color: white;
+  color: #f6b93b;
   text-decoration: none;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.12), 2px 2px 2px rgba(0, 0, 0, 0.12),
     3px 3px 3px rgba(0, 0, 0, 0.12), 4px 4px 4px rgba(0, 0, 0, 0.12),
@@ -79,7 +79,8 @@ li {
 .he {
   top: 10%;
   position: absolute;
-  color: #140021;
+  color: white;
+  /* color: #140021; */
   left: 10vw;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.12), 2px 2px 2px rgba(0, 0, 0, 0.12),
     3px 3px 3px rgba(0, 0, 0, 0.12), 4px 4px 4px rgba(0, 0, 0, 0.12),
@@ -88,7 +89,8 @@ li {
 .llo {
   top: 25%;
   position: absolute;
-  color: #140021;
+  color: white;
+  /* color: #140021; */
   left: 20vw;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.12), 2px 2px 2px rgba(0, 0, 0, 0.12),
     3px 3px 3px rgba(0, 0, 0, 0.12), 4px 4px 4px rgba(0, 0, 0, 0.12),
@@ -97,23 +99,36 @@ li {
 
 #words {
   top: 20%;
-  left: 55%;
+  left: 50%;
   position: absolute;
   border-color: black;
-  width: 20%;
+  width: 25%;
   height: 20%;
 }
 
 .intro {
   color: #f6b93b;
   font-size: 30%;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.12), 2px 2px 2px rgba(0, 0, 0, 0.12),
+    3px 3px 3px rgba(0, 0, 0, 0.12), 4px 4px 4px rgba(0, 0, 0, 0.12),
+    0 8px 8px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.12);
 }
 
 .name {
   color: aliceblue;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.12), 2px 2px 2px rgba(0, 0, 0, 0.12),
+    3px 3px 3px rgba(0, 0, 0, 0.12), 4px 4px 4px rgba(0, 0, 0, 0.12),
+    0 8px 8px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.12);
   font-size: 45%;
 }
 
+.specs {
+  opacity: 0.8;
+  color: #f6b93b;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.12), 2px 2px 2px rgba(0, 0, 0, 0.12),
+    3px 3px 3px rgba(0, 0, 0, 0.12), 4px 4px 4px rgba(0, 0, 0, 0.12),
+    0 8px 8px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.12);
+}
 @media only screen and (max-device-width: 900px) {
   body {
     font-size: 60px;
@@ -183,7 +198,7 @@ li {
 /* HOver affect on sticky social media icons */
 
 .stickyicon-list a:hover {
-  color: #02c3bd;
+  color: #f6b93b;
   background-color: white;
 }
 
