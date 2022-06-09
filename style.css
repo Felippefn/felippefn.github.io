@@ -97,7 +97,7 @@ h3 {
   cursor: none;
   color: var(--font-color);
 }
-ul {
+ul{
   z-index: 2;
   list-style-type: none;
   margin: 0;
@@ -132,7 +132,7 @@ li {
 }
 #home_pg {
   z-index: 4;
-  top: 1%;
+  top: -1%;
   left: 50%;
   position: absolute;
 }
@@ -304,5 +304,18 @@ li {
   100% {
     opacity: 0;
     transform: rotate(45deg) translate(20px, 20px);
+  }
+}
+@media only screen and (max-device-width: 430px) {
+  #words{
+    left: 25%;
+    top: 45%;
+    width: 70%;
+  }
+  ul{
+    position: absolute;
+    top: 10%;
+    float: left;
+    left: -1%;
   }
 }
