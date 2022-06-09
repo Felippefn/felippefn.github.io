@@ -30,6 +30,7 @@ h3 {
 }
 
 :root {
+  --yellow-color: #f6b93b;
   --bg-color: #2b2d42;
   --font-color: white;
   --social-icon: white;
@@ -40,6 +41,7 @@ h3 {
 }
 
 .mudar-tema {
+  transition: ease-in-out 0.8s;
   z-index: 2;
   position: relative;
   margin-top: 1%;
@@ -56,10 +58,11 @@ h3 {
 }
 
 .light-mode {
-  --bg-color: #A49E8D;
+  --yellow-color: #f68a3b;
+  --bg-color: white;
   --font-color: #2b2d42;
   --social-icon: #2b2d42;
-  --label-icon: url("https://caelum-online-public.s3.amazonaws.com/1369-alura-mais-dark-mode/lua.png");
+  --label-icon: url("https://img.icons8.com/external-bearicons-detailed-outline-bearicons/64/undefined/external-moon-halloween-bearicons-detailed-outline-bearicons.png");
 }
 
 @font-face {
@@ -85,7 +88,7 @@ h3 {
     3px 3px 3px rgba(0, 0, 0, 0.12), 4px 4px 4px rgba(0, 0, 0, 0.12),
     0 8px 8px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.12);
   position: absolute;
-  color: #f6b93b;
+  color: var(--yellow-color);
   margin: 0%;
   top: 3%;
   left: 2%;
@@ -114,7 +117,7 @@ a {
   padding-left: 15px;
   opacity: 5;
   transition: 0.3s;
-  color: #f6b93b;
+  color: var(--yellow-color);
   text-decoration: none;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.12), 2px 2px 2px rgba(0, 0, 0, 0.12),
     3px 3px 3px rgba(0, 0, 0, 0.12), 4px 4px 4px rgba(0, 0, 0, 0.12),
@@ -157,8 +160,7 @@ li {
 }
 
 #diag_layout {
-  background-color: var(--bg-color);
-  /* background: linear-gradient(to right, transparent, mistyrose); */
+  background-color: var(--bg-color) !important;
   transform: rotate(-15deg);
   z-index: 0;
   top: 20%;
@@ -206,7 +208,7 @@ li {
 
 .name {
   opacity: 10;
-  color: #f6b93b;
+  color: var(--yellow-color);
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.12), 2px 2px 2px rgba(0, 0, 0, 0.12),
     3px 3px 3px rgba(0, 0, 0, 0.12), 4px 4px 4px rgba(0, 0, 0, 0.12),
     0 8px 8px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.12);
@@ -240,7 +242,7 @@ li {
 /* HOver affect on sticky social media icons */
 
 .stickyicon-list a:hover {
-  color: #f6b93b;
+  color: var(--yellow-color);
 }
 
 .stickyicon-list a{
