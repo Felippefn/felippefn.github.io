@@ -29,7 +29,7 @@ h3 {
   font-size: 25%;
 }
 
-Vars{
+Varsa{
   --shadowPtrn: 1px 1px 1px rgba(0, 0, 0, 0.12), 2px 2px 2px rgba(0, 0, 0, 0.12),
   3px 3px 3px rgba(0, 0, 0, 0.12), 4px 4px 4px rgba(0, 0, 0, 0.12),
   0 8px 8px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.12); 
@@ -53,7 +53,9 @@ Vars{
 .full_name{
   z-index: 5;
   font-size: 30%;
-  text-shadow: var(--shadowPtrn);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.12), 2px 2px 2px rgba(0, 0, 0, 0.12),
+  3px 3px 3px rgba(0, 0, 0, 0.12), 4px 4px 4px rgba(0, 0, 0, 0.12),
+  0 8px 8px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.12);
   position: absolute;
   color: white;
   margin: 0%;
@@ -85,7 +87,10 @@ a {
   transition: 0.3s;
   color: #f6b93b;
   text-decoration: none;
-  text-shadow: var(--shadowPtrn);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.12), 2px 2px 2px rgba(0, 0, 0, 0.12),
+  3px 3px 3px rgba(0, 0, 0, 0.12), 4px 4px 4px rgba(0, 0, 0, 0.12),
+  0 8px 8px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.12)
+;
 }
 a:hover {
   opacity: 1;
@@ -107,7 +112,10 @@ li {
   color: white;
   /* color: #140021; */
   left: 15vw;
-  text-shadow: var(--shadowPtrn);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.12), 2px 2px 2px rgba(0, 0, 0, 0.12),
+  3px 3px 3px rgba(0, 0, 0, 0.12), 4px 4px 4px rgba(0, 0, 0, 0.12),
+  0 8px 8px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.12)
+;
 }
 .llo {
   transform: rotate(11deg);
@@ -116,7 +124,10 @@ li {
   color: white;
   /* color: #140021; */
   left: 20vw;
-  text-shadow: var(--shadowPtrn);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.12), 2px 2px 2px rgba(0, 0, 0, 0.12),
+  3px 3px 3px rgba(0, 0, 0, 0.12), 4px 4px 4px rgba(0, 0, 0, 0.12),
+  0 8px 8px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.12)
+;
 }
 
 #diag_layout{
@@ -124,7 +135,7 @@ li {
   z-index: 0;
   top: 20%;
   left: -10%;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.555);
   width: 170%;
   height: 40%;
   position: absolute;
@@ -148,19 +159,28 @@ li {
 .intro {
   color: #f6b93b;
   font-size: 30%;
-  text-shadow: var(--shadowPtrn);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.12), 2px 2px 2px rgba(0, 0, 0, 0.12),
+  3px 3px 3px rgba(0, 0, 0, 0.12), 4px 4px 4px rgba(0, 0, 0, 0.12),
+  0 8px 8px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.12)
+;
 }
 
 .name {
   color: black;
-  text-shadow: var(--shadowPtrn);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.12), 2px 2px 2px rgba(0, 0, 0, 0.12),
+  3px 3px 3px rgba(0, 0, 0, 0.12), 4px 4px 4px rgba(0, 0, 0, 0.12),
+  0 8px 8px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.12)
+;
   font-size: 45%;
 }
 
 .specs {
   opacity: 0.8;
   color: black;
-  text-shadow: var(--shadowPtrn);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.12), 2px 2px 2px rgba(0, 0, 0, 0.12),
+  3px 3px 3px rgba(0, 0, 0, 0.12), 4px 4px 4px rgba(0, 0, 0, 0.12),
+  0 8px 8px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.12)
+;
 }
 
 .stickyicon-list {
