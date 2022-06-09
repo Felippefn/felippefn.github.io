@@ -2,7 +2,9 @@ function animationFunction(x) {
     x.classList.toggle("change");
 
 }
-
+document.querySelector("#btn").addEventListener("click", () => {
+    document.body.classList.toggle("light-mode")
+})
 // function openNav() {
 //     document.getElementById("myNav").style.width = "15%";
 //     document.getElementById("myNav").style.height = "40vh";
