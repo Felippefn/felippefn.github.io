@@ -307,6 +307,10 @@ li {
   }
 }
 @media only screen and (max-device-width: 430px) {
+  body{
+    background-color: white;
+  }
+
   #words{
     left: 25%;
     top: 45%;
