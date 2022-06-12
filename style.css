@@ -306,6 +306,16 @@ li {
     transform: rotate(45deg) translate(20px, 20px);
   }
 }
+/* FOR 1080P */
+@media only screen and (min-height: 900px){
+  body{
+    font-size: 150px;
+  }
+}
+
+
+
+/* FOR MOBILE */
 @media only screen and (max-device-width: 430px) {
   body{
     background-color: white;
