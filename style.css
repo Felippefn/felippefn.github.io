@@ -283,8 +283,8 @@ li {
   display: block;
   width: 20px;
   height: 20px;
-  border-bottom: 5px solid black;
-  border-right: 5px solid black;
+  border-bottom: 5px solid var(--bg-colorMobile);
+  border-right: 5px solid var(--bg-colorMobile);
   transform: rotate(45deg);
   margin: -10px;
   animation-delay: 4s;
@@ -325,7 +325,19 @@ li {
     overflow-x: hidden;
     background-color: var(--bg-colorMobile);
   }
-  
+
+  .arrow span {
+    border-bottom: 5px solid var(--bg-colorMobile);
+    border-right: 5px solid var(--bg-colorMobile);
+  }
+  .ptext{
+    z-index: 5;
+    color: white;
+    position: absolute;
+    top: 15%;
+    font-size: 50px;
+    transform: rotate(-7deg);
+  }
   .he{
     left: 3vw;
     top: 10%;
