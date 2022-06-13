@@ -321,9 +321,6 @@ li {
 
 /* FOR MOBILE */
 @media only screen and (max-device-width: 430px) {
-  html{
-    overflow-x: hidden;
-  }
   body{
     font-size: 70px;
     overflow-x: hidden;
@@ -376,7 +373,7 @@ li {
   }
   .mudar-tema{
     margin-top: 1%;
-    right: -5%;
+    right: -2%;
   }
   .specs{
     opacity: 0.9;
