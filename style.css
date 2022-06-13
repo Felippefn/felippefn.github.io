@@ -325,6 +325,7 @@ li {
     overflow-x: hidden;
   }
   body{
+    font-size: 70px;
     overflow-x: hidden;
     background-color: var(--bg-colorMobile);
   }
@@ -334,14 +335,14 @@ li {
   }
   .ptext{
     z-index: 5;
-    color: white;
+    color: var(--bg-colorMobile);
     position: absolute;
     top: 15%;
     font-size: 50px;
     transform: rotate(-7deg);
   }
   .he{
-    left: 3vw;
+    left: 5vw;
     top: 10%;
   }
 
