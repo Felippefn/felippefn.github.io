@@ -321,11 +321,13 @@ li {
 
 /* FOR MOBILE */
 @media only screen and (max-device-width: 430px) {
+  html{
+    overflow-x: hidden;
+  }
   body{
     overflow-x: hidden;
     background-color: var(--bg-colorMobile);
   }
-
   .arrow span {
     border-bottom: 5px solid var(--bg-colorMobile);
     border-right: 5px solid var(--bg-colorMobile);
@@ -371,16 +373,16 @@ li {
   #diag_layout2{
     display: none;
   }
-
   .mudar-tema{
-    margin-top: -1.5%;
+    margin-top: 1%;
     right: -5%;
   }
   .specs{
     opacity: 0.9;
   }
   #words{
-    left: 7.5%;
+    transform: translateX(0%);
+    left: 5%;
     top: 35%;
     padding: 10px;
     width: 80%;
@@ -391,7 +393,6 @@ li {
     0 16px 16px rgba(0, 0, 0, 0.11), 0 32px 32px rgba(0, 0, 0, 0.11);;
   }
   ul{
-    position: fixed;
     top: 6%;
     float: left;
     left: -1%;
