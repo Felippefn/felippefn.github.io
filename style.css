@@ -1,6 +1,6 @@
 body {
   font-family: "montserratlight";
-  font-size: 80px;
+  font-size: 90px;
   margin: 0;
   background-color: var(--bg-color);
   /* background: linear-gradient(141deg, #008b8b 0%, #02c3bd 51%, #147572 95%); */
@@ -34,6 +34,9 @@ h3 {
   --bg-color: #2b2d42;
   --font-color: white;
   --social-icon: white;
+  --dia-colorMobile: #2b2d42;
+  --bg-colorMobile: white;
+  --bg-colorMobile2:  #000505;
   --shadowPtrn: 1px 1px 1px rgba(0, 0, 0, 0.12), 2px 2px 2px rgba(0, 0, 0, 0.12),
     3px 3px 3px rgba(0, 0, 0, 0.12), 4px 4px 4px rgba(0, 0, 0, 0.12),
     0 8px 8px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.12);
@@ -62,6 +65,9 @@ h3 {
   --bg-color: white;
   --font-color: #2b2d42;
   --social-icon: #2b2d42;
+  --dia-colorMobile: rgba(172, 172, 172, 0.774);
+  --bg-colorMobile:  #2b2d42;
+  --bg-colorMobile2:  white;
   --label-icon: url("https://img.icons8.com/external-bearicons-detailed-outline-bearicons/64/undefined/external-moon-halloween-bearicons-detailed-outline-bearicons.png");
 }
 
@@ -313,22 +319,68 @@ li {
   }
 }
 
-
-
 /* FOR MOBILE */
 @media only screen and (max-device-width: 430px) {
   body{
-    background-color: white;
+    overflow-x: hidden;
+    background-color: var(--bg-colorMobile);
+  }
+  
+  .he{
+    left: 3vw;
+    top: 10%;
   }
 
+  .llo{
+    top: 10%;
+    left: 35vw;
+  }
+
+  #diag_layout{
+    padding-bottom: 15px;
+  clip-path: polygon(
+    0 0,
+    100% 0%,
+    100% calc(100% - 75px),
+    0% 100%
+  );
+  background-image: linear-gradient(var(--dia-colorMobile), var(--bg-colorMobile2));
+  transform: rotate(0deg);
+  z-index: 0;
+  position: absolute;
+  top: -10%;
+  left: -30;
+  height: 130%;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
+    0 4px 4px rgba(0, 0, 0, 0.11), 0 8px 8px rgba(0, 0, 0, 0.11),
+    0 16px 16px rgba(0, 0, 0, 0.11), 0 32px 32px rgba(0, 0, 0, 0.11);
+}
+
+  #diag_layout2{
+    display: none;
+  }
+
+  .mudar-tema{
+    margin-top: -1.5%;
+    right: -5%;
+  }
+  .specs{
+    opacity: 0.9;
+  }
   #words{
-    left: 25%;
-    top: 45%;
-    width: 70%;
+    left: 7.5%;
+    top: 35%;
+    padding: 10px;
+    width: 80%;
+    height: 40%;
+    border-radius: 20px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
+    0 4px 4px rgba(0, 0, 0, 0.11), 0 8px 8px rgba(0, 0, 0, 0.11),
+    0 16px 16px rgba(0, 0, 0, 0.11), 0 32px 32px rgba(0, 0, 0, 0.11);;
   }
   ul{
-    position: absolute;
-    top: 10%;
+    position: fixed;
+    top: 6%;
     float: left;
     left: -1%;
   }
