@@ -1,8 +1,12 @@
+var colorHex;
+
 function animationFunction(x) {
   x.classList.toggle("change");
 }
+
 document.querySelector("#btn").addEventListener("click", () => {
   document.body.classList.toggle("light-mode");
+  colorHex = colorHex == "#fffff" ? "#2b2d42" : "#fffff";
 });
 
 function showPage() {
@@ -21,7 +25,7 @@ window.addEventListener("scroll", () => {
 particlesJS("particles-js", {
   particles: {
     number: { value: 63, density: { enable: true, value_area: 800 } },
-    color: { value: "#ffffff" },
+    color: { value: colorHex },
     shape: {
       type: "polygon",
       stroke: { width: 0, color: "#000000" },
@@ -41,7 +45,7 @@ particlesJS("particles-js", {
     line_linked: {
       enable: true,
       distance: 160.3412060865523,
-      color: "#ffffff",
+      color: colorHex,
       opacity: 0.4,
       width: 1,
     },
