@@ -2,6 +2,7 @@ body {
   font-family: "montserratlight";
   font-size: 90px;
   margin: 0;
+  font-weight: 300;
   background-color: var(--bg-color);
   /* background: linear-gradient(141deg, #008b8b 0%, #02c3bd 51%, #147572 95%); */
   height: 100%;
@@ -12,7 +13,7 @@ body {
 
 canvas {
   display: block;
-  vertical-align: bottom;
+  /* vertical-align: bottom; */
 } /* ---- particles.js container ---- */
 #particles-js {
   position: fixed;
@@ -44,7 +45,7 @@ canvas {
 }
 #stats,
 .count-particles {
-  -webkit-user-select: none;
+  /* -webkit-user-select: none; */
   margin-top: 5px;
   margin-left: 5px;
 }
@@ -74,6 +75,8 @@ h2 {
 h3 {
   font-family: "montserratextralight";
   font-size: 25%;
+  font-weight: 200;
+
 }
 
 :root {
@@ -112,7 +115,7 @@ h3 {
   --bg-color: white;
   --font-color: #2b2d42;
   --social-icon: #2b2d42;
-  --dia-colorMobile: rgba(172, 172, 172, 0.363);
+  --dia-colorMobile: rgba(255, 255, 255, 0.178);
   --bg-colorMobile: #2b2d42;
   --bg-colorMobile2: white;
   --label-icon: url("https://img.icons8.com/external-bearicons-detailed-outline-bearicons/64/undefined/external-moon-halloween-bearicons-detailed-outline-bearicons.png");
@@ -248,7 +251,7 @@ li {
   left: 40%;
   position: absolute;
   width: 25%;
-  height: 20%;
+  height: 25%;
 }
 
 .intro {
@@ -371,8 +374,9 @@ li {
   body {
     font-size: 70px;
     overflow-x: hidden;
-    background-color: var(--bg-colorMobile);
   }
+
+  ul{display: none;}
   .arrow span {
     border-bottom: 5px solid var(--bg-colorMobile);
     border-right: 5px solid var(--bg-colorMobile);
@@ -396,8 +400,8 @@ li {
   }
 
   #diag_layout {
+    display: none;
     padding-bottom: 15px;
-    clip-path: polygon(0 0, 100% 0%, 100% calc(100% - 75px), 0% 100%);
     background-image: linear-gradient(
       var(--dia-colorMobile),
       var(--bg-colorMobile2)
