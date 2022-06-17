@@ -20,6 +20,7 @@ window.addEventListener("scroll", () => {
     value = 10;
   }
 });
+
 function setColor() {
   colorHex = colorHex == "#ffffff" ? "#2b2d42" : "#ffffff";
   particlesJS("particles-js", {
@@ -99,4 +100,3 @@ function setColor() {
   requestAnimationFrame(update);
 }
 setColor();
-
