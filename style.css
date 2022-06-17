@@ -76,7 +76,6 @@ h3 {
   font-family: "montserratextralight";
   font-size: 25%;
   font-weight: 200;
-
 }
 
 :root {
@@ -376,7 +375,9 @@ li {
     overflow-x: hidden;
   }
 
-  ul{display: none;}
+  ul {
+    display: none;
+  }
   .arrow span {
     border-bottom: 5px solid var(--bg-colorMobile);
     border-right: 5px solid var(--bg-colorMobile);
@@ -401,7 +402,7 @@ li {
 
   #diag_layout {
     display: none;
-    padding-bottom: 15px;
+    /* padding-bottom: 15px;
     background-image: linear-gradient(
       var(--dia-colorMobile),
       var(--bg-colorMobile2)
@@ -415,13 +416,15 @@ li {
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
       0 4px 4px rgba(0, 0, 0, 0.11), 0 8px 8px rgba(0, 0, 0, 0.11),
       0 16px 16px rgba(0, 0, 0, 0.11), 0 32px 32px rgba(0, 0, 0, 0.11);
-  }
+  */
+  } 
 
   #diag_layout2 {
     display: none;
   }
   .mudar-tema {
     margin-top: 1%;
+    float: right;
     right: -2%;
   }
   .specs {
