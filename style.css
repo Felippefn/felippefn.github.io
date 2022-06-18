@@ -2,7 +2,7 @@ body {
   font-family: "montserratlight";
   font-size: 90px;
   margin: 0;
-  font-weight: 300;
+  font-weight: 500;
   background-color: var(--bg-color);
   /* background: linear-gradient(141deg, #008b8b 0%, #02c3bd 51%, #147572 95%); */
   height: 100%;
@@ -82,6 +82,7 @@ h3 {
   --yellow-color: #f6b93b;
   --bg-color: #2b2d42;
   --font-color: white;
+  --font-color-specs: white;
   --social-icon: white;
   --dia-colorMobile: #2b2d424f;
   --bg-colorMobile: white;
@@ -113,6 +114,7 @@ h3 {
   --yellow-color: #f68a3b;
   --bg-color: white;
   --font-color: #2b2d42;
+  --font-color-specs: black;
   --social-icon: #2b2d42;
   --dia-colorMobile: rgba(255, 255, 255, 0.178);
   --bg-colorMobile: #2b2d42;
@@ -271,10 +273,10 @@ li {
 }
 
 .specs {
-  opacity: 0.7;
-  color: var(--font-color);
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.12), 2px 2px 2px rgba(0, 0, 0, 0.12),
-    3px 3px 3px rgba(0, 0, 0, 0.12), 4px 4px 4px rgba(0, 0, 0, 0.12),
+  opacity: 0.9;
+  color: var(--font-color-specs);
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.12), 4px 4px 4px rgba(0, 0, 0, 0.12),
+    5px 5px 5px rgba(0, 0, 0, 0.12), 4px 4px 4px rgba(0, 0, 0, 0.12),
     0 8px 8px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.12);
 }
 
@@ -428,12 +430,16 @@ li {
     right: -2%;
   }
   .specs {
-    opacity: 0.9;
+    font-size: 20px;
+    font-weight: 500;
+    opacity: 3;
   }
   #words {
     transform: translateX(0%);
     left: 5%;
     top: 35%;
+    display: grid;
+    justify-content: center;
     padding: 10px;
     width: 80%;
     height: 40%;
