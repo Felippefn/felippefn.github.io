@@ -14,7 +14,9 @@ body {
 canvas {
   display: block;
   /* vertical-align: bottom; */
-} /* ---- particles.js container ---- */
+}
+
+/* ---- particles.js container ---- */
 #particles-js {
   position: fixed;
   width: 100%;
@@ -24,7 +26,9 @@ canvas {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 100% 100%;
-} /* ---- stats.js ---- */
+}
+
+/* ---- stats.js ---- */
 .count-particles {
   background: #000022;
   position: absolute;
@@ -40,19 +44,23 @@ canvas {
   font-family: Helvetica, Arial, sans-serif;
   font-weight: bold;
 }
+
 .js-count-particles {
   font-size: 1.1em;
 }
+
 #stats,
 .count-particles {
   /* -webkit-user-select: none; */
   margin-top: 5px;
   margin-left: 5px;
 }
+
 #stats {
   border-radius: 3px 3px 0 0;
   overflow: hidden;
 }
+
 .count-particles {
   border-radius: 0 0 3px 3px;
 }
@@ -150,10 +158,12 @@ h3 {
   top: 3%;
   left: 2%;
 }
+
 .full_name:hover {
   cursor: none;
   color: var(--font-color);
 }
+
 ul {
   z-index: 2;
   list-style-type: none;
@@ -166,6 +176,7 @@ ul {
   position: fixed;
   text-decoration: none;
 }
+
 a:visited {
   text-decoration: none;
 }
@@ -180,19 +191,23 @@ a {
     3px 3px 3px rgba(0, 0, 0, 0.12), 4px 4px 4px rgba(0, 0, 0, 0.12),
     0 8px 8px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.12);
 }
+
 a:hover {
   opacity: 1;
   color: var(--font-color);
 }
+
 li {
   display: inline;
 }
+
 #home_pg {
   z-index: 4;
   top: -1%;
   left: 50%;
   position: absolute;
 }
+
 .he {
   /* transform: rotate(-11deg); */
   top: 8%;
@@ -204,6 +219,7 @@ li {
     3px 3px 3px rgba(0, 0, 0, 0.12), 4px 4px 4px rgba(0, 0, 0, 0.12),
     0 8px 8px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.12);
 }
+
 .llo {
   /* transform: rotate(11deg); */
   top: 25%;
@@ -322,6 +338,7 @@ li {
   position: absolute;
   bottom: -25%;
 }
+
 .arrow {
   z-index: 1;
   position: absolute;
@@ -355,14 +372,52 @@ li {
     opacity: 0;
     transform: rotate(45deg) translate(-20px, -20px);
   }
+
   50% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
     transform: rotate(45deg) translate(20px, 20px);
   }
 }
+
+.projectTitlebox {
+  display: flex;
+}
+
+.ptext {
+  display: flex;
+  z-index: 5;
+  color: var(--bg-colorMobile);
+  position: absolute;
+  top: 15%;
+  font-size: 30px;
+}
+
+.boxPrjchild1 {
+  position: absolute;
+  border-radius: 15px;
+  left: 50%;
+  width: 40vw;
+  height: 25vh;
+  background-color: white;
+  box-shadow: 0.5rem 0.5rem rgba(0, 0, 0, 0.137), -0.5rem -0.5rem rgba(204, 204, 204, 0.199);
+}
+
+.circlePrj1 {
+  position: relative;
+  border-radius: 15px;
+  left: -7%;
+  top: -10%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: 0 0 30px #ccc;
+  background-image: url("https://drive.google.com/file/d/1vtlUpzuL24ym3JLkghoTTpzCdtItWFJw/view?usp=sharing");
+}
+
 /* FOR 1080P */
 @media only screen and (min-height: 900px) {
   body {
@@ -380,18 +435,20 @@ li {
   ul {
     display: none;
   }
+
   .arrow span {
     border-bottom: 5px solid var(--bg-colorMobile);
     border-right: 5px solid var(--bg-colorMobile);
   }
+
   .ptext {
     z-index: 5;
     color: var(--bg-colorMobile);
     position: absolute;
     top: 15%;
-    font-size: 50px;
-    transform: rotate(-7deg);
+    font-size: 30px;
   }
+
   .he {
     left: 5vw;
     top: 10%;
@@ -419,21 +476,24 @@ li {
       0 4px 4px rgba(0, 0, 0, 0.11), 0 8px 8px rgba(0, 0, 0, 0.11),
       0 16px 16px rgba(0, 0, 0, 0.11), 0 32px 32px rgba(0, 0, 0, 0.11);
   */
-  } 
+  }
 
   #diag_layout2 {
     display: none;
   }
+
   .mudar-tema {
     margin-top: 1%;
     float: right;
     right: -2%;
   }
+
   .specs {
     font-size: 22px;
     font-weight: 200;
     opacity: 3;
   }
+
   #words {
     transform: translateX(0%);
     left: 5%;
@@ -441,6 +501,7 @@ li {
     display: grid;
     justify-content: center;
     text-align: left;
+
     padding: 15px;
     width: 80%;
     height: 45%;
@@ -449,9 +510,17 @@ li {
       0 4px 4px rgba(0, 0, 0, 0.11), 0 8px 8px rgba(0, 0, 0, 0.11),
       0 16px 16px rgba(0, 0, 0, 0.11), 0 32px 32px rgba(0, 0, 0, 0.11);
   }
+
   ul {
     top: 6%;
     float: left;
     left: -1%;
   }
+
+  .boxPrjchild1 {
+    margin: 0;
+    width: 80%;
+    left: 10%;
+  }
+
 }
