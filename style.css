@@ -373,7 +373,7 @@ li {
 /* FOR MOBILE */
 @media only screen and (max-device-width: 430px) {
   body {
-    font-size: 70px;
+    font-size: 80px;
     overflow-x: hidden;
   }
 
@@ -430,8 +430,8 @@ li {
     right: -2%;
   }
   .specs {
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 22px;
+    font-weight: 200;
     opacity: 3;
   }
   #words {
@@ -440,9 +440,10 @@ li {
     top: 35%;
     display: grid;
     justify-content: center;
-    padding: 10px;
+    text-align: left;
+    padding: 15px;
     width: 80%;
-    height: 40%;
+    height: 45%;
     border-radius: 20px;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
       0 4px 4px rgba(0, 0, 0, 0.11), 0 8px 8px rgba(0, 0, 0, 0.11),
