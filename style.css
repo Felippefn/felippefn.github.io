@@ -452,14 +452,14 @@ li {
   border-radius: 15px;
   width: 40vw;
   height: 25vh;
-  top: 15%;
+  top: 20%;
   background-color: rgba(255, 255, 255, 0.308);
   box-shadow: 0.5rem 0.5rem rgba(0, 0, 0, 0.137), -0.5rem -0.5rem rgba(204, 204, 204, 0.199);
 }
 .boxPrjchild2 {
   position: absolute;
   border-radius: 15px;
-  top: 60%;
+  top: 70%;
   width: 40vw;
   height: 25vh;
   background-color: rgba(255, 255, 255, 0.308);;
@@ -498,61 +498,34 @@ li {
     font-size: 80px;
     overflow-x: hidden;
   }
-
   ul {
     display: none;
   }
-
   .arrow span {
     border-bottom: 5px solid var(--bg-colorMobile);
     border-right: 5px solid var(--bg-colorMobile);
   }
-
-  .ptext {
-    z-index: 5;
-    color: var(--bg-colorMobile);
-    position: absolute;
-    top: 15%;
-    font-size: 30px;
-  }
-
   .he {
     left: 5vw;
-    top: 10%;
+    top: 15%;
   }
 
   .llo {
-    top: 10%;
+    top: 15%;
     left: 35vw;
   }
 
   #diag_layout {
     display: none;
-    /* padding-bottom: 15px;
-    background-image: linear-gradient(
-      var(--dia-colorMobile),
-      var(--bg-colorMobile2)
-    );
-    transform: rotate(0deg);
-    z-index: 0;
-    position: absolute;
-    top: -10%;
-    left: -30;
-    height: 130%;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
-      0 4px 4px rgba(0, 0, 0, 0.11), 0 8px 8px rgba(0, 0, 0, 0.11),
-      0 16px 16px rgba(0, 0, 0, 0.11), 0 32px 32px rgba(0, 0, 0, 0.11);
-  */
   }
 
   #diag_layout2 {
     display: none;
   }
-
   .mudar-tema {
-    margin-top: 1%;
+    margin-top: 2%;
     float: right;
-    right: -2%;
+    right: -10%;
   }
 
   .specs {
@@ -564,14 +537,14 @@ li {
   #words {
     transform: translateX(0%);
     left: 5%;
-    top: 35%;
+    top: 40%;
     display: grid;
     justify-content: center;
     text-align: left;
-
+    padding-bottom: 5px;
     padding: 15px;
     width: 80%;
-    height: 45%;
+    height: 47%;
     border-radius: 20px;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
       0 4px 4px rgba(0, 0, 0, 0.11), 0 8px 8px rgba(0, 0, 0, 0.11),
@@ -590,4 +563,29 @@ li {
     left: 10%;
   }
 
+  .ptext {
+    z-index: 2;
+    color: var(--bg-colorMobile);
+    position: absolute;
+    top: 150%;
+    left: 2%;
+    font-size: 0.5em;
+    display: flex;
+  }
+  .hr-line{
+    position: relative;
+    margin-top: 25px;
+    margin-right: 35px;
+    right: -2%;
+    width: 160px;
+    display: inline;
+    color: var(--bg-colorMobile);
+  }
+  .layoutScrollbox{
+    transform: translate(-35%, 50%);
+    width: 82vw;
+  }
+  .boxPrjchild2{
+    width: 70vw;
+  }
 }
