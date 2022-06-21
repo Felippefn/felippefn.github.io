@@ -434,7 +434,9 @@ li {
   z-index: 2;
   color: var(--bg-colorMobile);
   position: absolute;
-  font-size: 0.4em;
+  top: 115%;
+  left: 32%;
+  font-size: 0.5em;
   display: flex;
 }
 .hr-line{
@@ -479,6 +481,14 @@ li {
 @media only screen and (min-height: 900px) {
   body {
     font-size: 130px;
+  }
+  .hr-line{
+    position: relative;
+    margin-top: 35px;
+    margin-right: 35px;
+    right: -2%;
+    width: 200px;
+    display: inline;
   }
 }
 
