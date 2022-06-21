@@ -164,7 +164,7 @@ h3 {
   color: var(--font-color);
 }
 
-ul {
+.navBarv1 ul {
   z-index: 2;
   list-style-type: none;
   margin: 0;
@@ -334,10 +334,6 @@ li {
   bottom: -130%;
 }
 
-.boxPrj {
-  position: absolute;
-  bottom: -25%;
-}
 
 .arrow {
   z-index: 1;
@@ -382,7 +378,12 @@ li {
     transform: rotate(45deg) translate(20px, 20px);
   }
 }
-
+.boxPrj {
+  margin: 0 auto;
+  position: absolute;
+  bottom: -65%;
+  display: grid;
+}
 .projectTitlebox {
   display: flex;
 }
@@ -397,7 +398,7 @@ li {
 }
 
 .boxPrjchild1 {
-  position: absolute;
+  position: relative;
   border-radius: 15px;
   left: 50%;
   width: 40vw;
@@ -405,7 +406,16 @@ li {
   background-color: white;
   box-shadow: 0.5rem 0.5rem rgba(0, 0, 0, 0.137), -0.5rem -0.5rem rgba(204, 204, 204, 0.199);
 }
-
+.boxPrjchild2 {
+  position: relative;
+  border-radius: 15px;
+  left: 50%;
+  top: 40%;
+  width: 40vw;
+  height: 25vh;
+  background-color: white;
+  box-shadow: 0.5rem 0.5rem rgba(0, 0, 0, 0.137), -0.5rem -0.5rem rgba(204, 204, 204, 0.199);
+}
 .circlePrj1 {
   position: relative;
   border-radius: 15px;
