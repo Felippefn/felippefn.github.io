@@ -10,9 +10,21 @@ body {
   overflow-x: hidden;
   margin: 0;
 }
+body::-webkit-scrollbar {
+  width: 10px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: rgba(128, 128, 128, 0.205);        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--bg-color-scroll);    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid var(--bg-color-scroll2);  /* creates padding around scroll thumb */
+}
 .menu{
-  position: relative;
-  display: grid;
+  display: block;
 }
 canvas {
   display: block;
@@ -92,6 +104,8 @@ h3 {
 :root {
   --yellow-color: #f6b93b;
   --bg-color: #2b2d42;
+  --bg-color-scroll: rgba(255, 255, 255, 0.212);
+  --bg-color-scroll2: #2b2d424d;
   --font-color: white;
   --font-color-specs: white;
   --social-icon: white;
@@ -122,6 +136,8 @@ h3 {
 }
 
 .light-mode {
+  --bg-color-scroll: #2b2d424d;
+  --bg-color-scroll2: rgba(255, 255, 255, 0.212);
   --yellow-color: #f68a3b;
   --bg-color: white;
   --font-color: #2b2d42;
@@ -208,7 +224,7 @@ li {
   z-index: 4;
   top: -1%;
   left: 50%;
-  position: relative;
+  position: absolute;
 }
 
 .he {
@@ -225,11 +241,11 @@ li {
 
 .llo {
   /* transform: rotate(11deg); */
-  top: 45%;
+  top: 25%;
   position: absolute;
   color: var(--font-color);
   /* color: #140021; */
-  left: 25vw;
+  left: 20vw;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.12), 2px 2px 2px rgba(0, 0, 0, 0.12),
     3px 3px 3px rgba(0, 0, 0, 0.12), 4px 4px 4px rgba(0, 0, 0, 0.12),
     0 8px 8px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.12);
@@ -267,8 +283,8 @@ li {
 }
 
 #words {
-  top: 75%;
-  left: 55%;
+  top: 25%;
+  left: 40%;
   position: absolute;
   width: 25%;
   height: 25%;
@@ -333,7 +349,7 @@ li {
 }
 
 .boxCtt {
-  position: relative;
+  position: absolute;
   bottom: -130%;
 }
 
@@ -382,9 +398,8 @@ li {
   }
 }
 #Projects{
-  position: relative;
-  transform: translate(35%, 0%);
-  display: flex;
+  position: absolute;
+  bottom: 50%;
 }
 .layoutScrollbox{
   overflow-y: scroll;
@@ -394,10 +409,23 @@ li {
   border-radius: 15px;
   width: 800px;
   height: 500px;
-  display: grid;
+  display: flex;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
       0 4px 4px rgba(0, 0, 0, 0.11), 0 8px 8px rgba(0, 0, 0, 0.11),
       0 16px 16px rgba(0, 0, 0, 0.11), 0 32px 32px rgba(0, 0, 0, 0.11);
+}
+
+.layoutScrollbox::-webkit-scrollbar {
+  width: 8px;
+}
+.layoutScrollbox::-webkit-scrollbar-track {
+  background: rgba(128, 128, 128, 0.205);
+  border-radius: 15px;        /* color of the tracking area */
+}
+.layoutScrollbox::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.459);    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid var(--bg-color-scroll2);  /* creates padding around scroll thumb */
 }
 
 .ptext {
@@ -407,22 +435,25 @@ li {
   top: 15%;
   font-size: 30px;
 }
-
+.hr-line{
+  display: inline;
+}
 .boxPrjchild1 {
-  position: relative;
+  position: absolute;
   border-radius: 15px;
   width: 40vw;
   height: 25vh;
-  background-color: rgba(255, 255, 255, 0.185);
+  top: 10%;
+  background-color: rgba(255, 255, 255, 0.308);
   box-shadow: 0.5rem 0.5rem rgba(0, 0, 0, 0.137), -0.5rem -0.5rem rgba(204, 204, 204, 0.199);
 }
 .boxPrjchild2 {
-  position: relative;
+  position: absolute;
   border-radius: 15px;
-  top: 10%;
+  top: 50%;
   width: 40vw;
   height: 25vh;
-  background-color: rgba(255, 255, 255, 0.185);;
+  background-color: rgba(255, 255, 255, 0.308);;
   box-shadow: 0.5rem 0.5rem rgba(0, 0, 0, 0.137), -0.5rem -0.5rem rgba(204, 204, 204, 0.199);
 }
 .circlePrj1 {
