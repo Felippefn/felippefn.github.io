@@ -270,22 +270,6 @@ li {
     0 16px 16px rgba(0, 0, 0, 0.11), 0 32px 32px rgba(0, 0, 0, 0.11);
 }
 
-#diag_layout2 {
-  background-color: var(--bg-color);
-  /* background: linear-gradient(to right, transparent, mistyrose); */
-  transform: rotate(15deg);
-  z-index: -1;
-  top: 140%;
-  left: -20%;
-  /*background-color: rgba(255, 255, 255, 0.555);*/
-  width: 200%;
-  height: 40%;
-  position: absolute;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
-    0 4px 4px rgba(0, 0, 0, 0.11), 0 8px 8px rgba(0, 0, 0, 0.11),
-    0 16px 16px rgba(0, 0, 0, 0.11), 0 32px 32px rgba(0, 0, 0, 0.11);
-}
-
 #words {
   top: 25%;
   left: 40%;
@@ -494,8 +478,13 @@ li {
   height: 100px;
   border-radius: 50%;
   background-color: white;
+  transition: transform 250ms;
 }
-
+.circlePrj1:hover{
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2); 
+}
 img{
   -webkit-filter: drop-shadow(5px 5px 5px var(--img-dropShadow));
   filter: drop-shadow(5px 5px 5px var(--img-dropShadow));
