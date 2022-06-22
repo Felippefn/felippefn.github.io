@@ -11,19 +11,19 @@ body {
   margin: 0;
 }
 body::-webkit-scrollbar {
-  width: 10px;               /* width of the entire scrollbar */
+  width: 10px; /* width of the entire scrollbar */
 }
 
 body::-webkit-scrollbar-track {
-  background: rgba(128, 128, 128, 0.205);        /* color of the tracking area */
+  background: rgba(128, 128, 128, 0.205); /* color of the tracking area */
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: var(--bg-color-scroll);    /* color of the scroll thumb */
-  border-radius: 20px;       /* roundness of the scroll thumb */
-  border: 3px solid var(--bg-color-scroll2);  /* creates padding around scroll thumb */
+  background-color: var(--bg-color-scroll); /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid var(--bg-color-scroll2); /* creates padding around scroll thumb */
 }
-.menu{
+.menu {
   display: block;
 }
 canvas {
@@ -353,7 +353,6 @@ li {
   bottom: -130%;
 }
 
-
 .arrow {
   z-index: 1;
   position: absolute;
@@ -397,37 +396,42 @@ li {
     transform: rotate(45deg) translate(20px, 20px);
   }
 }
-#Projects{
+#Projects {
   position: absolute;
-  left: 32%;
+  left: 25%;
   top: 120%;
 }
-.layoutScrollbox{
+.layoutScrollbox {
   overflow-y: scroll;
   align-items: right;
   justify-content: right;
-  padding-right: 30px;
+  padding-right: 10px;
+  padding: 50px;
   position: absolute;
   border-radius: 15px;
   width: 60vw;
-  height: 80vh;
-  display: flex;
+  height: 60vh;
+  max-height: 60vh;
+  display: -webkit-flex;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
-      0 4px 4px rgba(0, 0, 0, 0.11), 0 8px 8px rgba(0, 0, 0, 0.11),
-      0 16px 16px rgba(0, 0, 0, 0.11), 0 32px 32px rgba(0, 0, 0, 0.11);
+    0 4px 4px rgba(0, 0, 0, 0.11), 0 8px 8px rgba(0, 0, 0, 0.11),
+    0 16px 16px rgba(0, 0, 0, 0.11), 0 32px 32px rgba(0, 0, 0, 0.11);
 }
 
 .layoutScrollbox::-webkit-scrollbar {
   width: 8px;
+  scroll-behavior: smooth;
 }
 .layoutScrollbox::-webkit-scrollbar-track {
   background: rgba(128, 128, 128, 0.205);
-  border-radius: 15px;        /* color of the tracking area */
+  scroll-behavior: smooth;
+  border-radius: 15px; /* color of the tracking area */
 }
 .layoutScrollbox::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 0, 0.459);    /* color of the scroll thumb */
-  border-radius: 20px;       /* roundness of the scroll thumb */
-  border: 3px solid var(--bg-color-scroll2);  /* creates padding around scroll thumb */
+  scroll-behavior: smooth;
+  background-color: rgba(0, 0, 0, 0.459); /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid var(--bg-color-scroll2); /* creates padding around scroll thumb */
 }
 
 .ptext {
@@ -435,11 +439,11 @@ li {
   color: var(--bg-colorMobile);
   position: absolute;
   top: 115%;
-  left: 32%;
+  left: 25%;
   font-size: 0.5em;
   display: flex;
 }
-.hr-line{
+.hr-line {
   position: relative;
   margin-top: 25px;
   margin-right: 35px;
@@ -452,18 +456,30 @@ li {
   border-radius: 15px;
   width: 40vw;
   height: 25vh;
-  top: 20%;
+  top: 15%;
   background-color: rgba(255, 255, 255, 0.308);
-  box-shadow: 0.5rem 0.5rem rgba(0, 0, 0, 0.137), -0.5rem -0.5rem rgba(204, 204, 204, 0.199);
+  box-shadow: 0.5rem 0.5rem rgba(0, 0, 0, 0.137),
+    -0.5rem -0.5rem rgba(204, 204, 204, 0.199);
 }
 .boxPrjchild2 {
   position: absolute;
   border-radius: 15px;
-  top: 70%;
+  top: 65%;
   width: 40vw;
   height: 25vh;
-  background-color: rgba(255, 255, 255, 0.308);;
-  box-shadow: 0.5rem 0.5rem rgba(0, 0, 0, 0.137), -0.5rem -0.5rem rgba(204, 204, 204, 0.199);
+  background-color: rgba(255, 255, 255, 0.308);
+  box-shadow: 0.5rem 0.5rem rgba(0, 0, 0, 0.137),
+    -0.5rem -0.5rem rgba(204, 204, 204, 0.199);
+}
+.boxPrjchild3 {
+  position: absolute;
+  border-radius: 15px;
+  top: 115%;
+  width: 40vw;
+  height: 25vh;
+  background-color: rgba(255, 255, 255, 0.308);
+  box-shadow: 0.5rem 0.5rem rgba(0, 0, 0, 0.137),
+    -0.5rem -0.5rem rgba(204, 204, 204, 0.199);
 }
 .circlePrj1 {
   position: relative;
@@ -482,7 +498,7 @@ li {
   body {
     font-size: 130px;
   }
-  .hr-line{
+  .hr-line {
     position: relative;
     margin-top: 35px;
     margin-right: 35px;
@@ -572,7 +588,7 @@ li {
     font-size: 0.5em;
     display: flex;
   }
-  .hr-line{
+  .hr-line {
     position: relative;
     margin-top: 25px;
     margin-right: 35px;
@@ -581,11 +597,11 @@ li {
     display: inline;
     color: var(--bg-colorMobile);
   }
-  .layoutScrollbox{
+  .layoutScrollbox {
     transform: translate(-35%, 50%);
     width: 82vw;
   }
-  .boxPrjchild2{
+  .boxPrjchild2 {
     width: 70vw;
   }
 }
