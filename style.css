@@ -504,7 +504,6 @@ img{
     display: inline;
   }
 }
-
 /* FOR MOBILE */
 @media only screen and (max-device-width: 430px) {
   body {
