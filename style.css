@@ -10,22 +10,30 @@ body {
   overflow-x: hidden;
   margin: 0;
 }
+
 body::-webkit-scrollbar {
-  width: 10px; /* width of the entire scrollbar */
+  width: 10px;
+  /* width of the entire scrollbar */
 }
 
 body::-webkit-scrollbar-track {
-  background: rgba(128, 128, 128, 0.205); /* color of the tracking area */
+  background: rgba(128, 128, 128, 0.205);
+  /* color of the tracking area */
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: var(--bg-color-scroll); /* color of the scroll thumb */
-  border-radius: 20px; /* roundness of the scroll thumb */
-  border: 3px solid var(--bg-color-scroll2); /* creates padding around scroll thumb */
+  background-color: var(--bg-color-scroll);
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+  border: 3px solid var(--bg-color-scroll2);
+  /* creates padding around scroll thumb */
 }
+
 .menu {
   display: block;
 }
+
 canvas {
   display: block;
   /* vertical-align: bottom; */
@@ -384,11 +392,13 @@ li {
     transform: rotate(45deg) translate(20px, 20px);
   }
 }
+
 #Projects {
   position: absolute;
   left: 25%;
   top: 120%;
 }
+
 .layoutScrollbox {
   overflow-y: scroll;
   align-items: right;
@@ -410,16 +420,22 @@ li {
   width: 8px;
   scroll-behavior: smooth;
 }
+
 .layoutScrollbox::-webkit-scrollbar-track {
   background: rgba(128, 128, 128, 0.205);
   scroll-behavior: smooth;
-  border-radius: 15px; /* color of the tracking area */
+  border-radius: 15px;
+  /* color of the tracking area */
 }
+
 .layoutScrollbox::-webkit-scrollbar-thumb {
   scroll-behavior: smooth;
-  background-color: rgba(0, 0, 0, 0.459); /* color of the scroll thumb */
-  border-radius: 20px; /* roundness of the scroll thumb */
-  border: 3px solid var(--bg-color-scroll2); /* creates padding around scroll thumb */
+  background-color: rgba(0, 0, 0, 0.459);
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+  border: 3px solid var(--bg-color-scroll2);
+  /* creates padding around scroll thumb */
 }
 
 .ptext {
@@ -431,6 +447,7 @@ li {
   font-size: 0.5em;
   display: flex;
 }
+
 .hr-line {
   position: relative;
   margin-top: 25px;
@@ -439,6 +456,7 @@ li {
   width: 200px;
   display: inline;
 }
+
 .boxPrjchild1 {
   position: absolute;
   border-radius: 15px;
@@ -449,6 +467,7 @@ li {
   box-shadow: 0.5rem 0.5rem rgba(0, 0, 0, 0.137),
     -0.5rem -0.5rem rgba(204, 204, 204, 0.199);
 }
+
 .boxPrjchild2 {
   position: absolute;
   border-radius: 15px;
@@ -459,6 +478,7 @@ li {
   box-shadow: 0.5rem 0.5rem rgba(0, 0, 0, 0.137),
     -0.5rem -0.5rem rgba(204, 204, 204, 0.199);
 }
+
 .boxPrjchild3 {
   position: absolute;
   border-radius: 15px;
@@ -469,6 +489,7 @@ li {
   box-shadow: 0.5rem 0.5rem rgba(0, 0, 0, 0.137),
     -0.5rem -0.5rem rgba(204, 204, 204, 0.199);
 }
+
 .circlePrj1 {
   position: relative;
   border-radius: 15px;
@@ -480,15 +501,20 @@ li {
   background-color: white;
   transition: transform 250ms;
 }
-.circlePrj1:hover{
-  -ms-transform: scale(1.2); /* IE 9 */
-  -webkit-transform: scale(1.2); /* Safari 3-8 */
-  transform: scale(1.2); 
+
+.circlePrj1:hover {
+  -ms-transform: scale(1.2);
+  /* IE 9 */
+  -webkit-transform: scale(1.2);
+  /* Safari 3-8 */
+  transform: scale(1.2);
 }
-img{
+
+img {
   -webkit-filter: drop-shadow(5px 5px 5px var(--img-dropShadow));
   filter: drop-shadow(5px 5px 5px var(--img-dropShadow));
 }
+
 *,
 *:before,
 *:after {
@@ -502,11 +528,13 @@ img{
     width: 120px;
   }
 }
+
 /* FOR 1080P */
 @media only screen and (min-height: 900px) {
   body {
     font-size: 130px;
   }
+
   .hr-line {
     position: relative;
     margin-top: 35px;
@@ -522,7 +550,17 @@ img{
     font-size: 80px;
     overflow-x: hidden;
   }
-  .arrow{display: none;}
+  html {
+    overflow: hidden;
+    height: 100%;
+    -webkit-overflow-scrolling: touch;
+  }
+  .vertical{display: none;}
+  .stickyicon-list{display: none;}
+  .arrow {
+    display: none;
+  }
+
   #socialShare {
     width: 100%;
     left: 26%;
@@ -531,8 +569,9 @@ img{
     text-align: center;
     position: fixed;
   }
+
   #socialShare a,
-  #socialShare > .socialBox {
+  #socialShare>.socialBox {
     position: relative;
     float: none;
     display: inline-block;
@@ -546,12 +585,12 @@ img{
     text-align: center;
     border-radius: 50%;
   }
-  
-  #socialShare  a {
+
+  #socialShare a {
     background-color: rgba(0, 0, 0, 0.2);
   }
-  
-  #socialShare > * > span {
+
+  #socialShare>*>span {
     background-color: rgba(0, 0, 0, 0.6);
     box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.15);
     display: block;
@@ -570,8 +609,9 @@ img{
     -moz-transition: all .35s ease-in-out;
     transition: all .35s ease-in-out;
   }
-  #socialShare > * > span:hover,
-  #socialShare > .open > span {
+
+  #socialShare>*>span:hover,
+  #socialShare>.open>span {
     -webkit-transform: scale(1.25);
     -moz-transform: scale(1.25);
     transform: scale(1.25);
@@ -579,7 +619,7 @@ img{
     -moz-transition: all .15s ease-in-out;
     transition: all .15s ease-in-out;
   }
-  
+
   #socialGallery {
     left: 50%;
     margin: 0 auto 0;
@@ -589,7 +629,7 @@ img{
     visibility: hidden;
     width: 400px;
   }
-  
+
   #socialGallery a {
     visibility: hidden;
     opacity: 0;
@@ -598,8 +638,8 @@ img{
     position: relative;
     top: 10px;
   }
-  
-  #socialGallery a > span {
+
+  #socialGallery a>span {
     position: relative;
     top: 4px;
     left: 4px;
@@ -607,29 +647,32 @@ img{
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
   }
-  
+
   .socialToolBox {
     cursor: default;
   }
-  
+
   .pointer {
     cursor: pointer
   }
-  
+
   .linkedin:hover {
-    background:  #0e76a8 !important
+    background: #0e76a8 !important
   }
-  
+
   .github:hover {
     background: #c9510c !important
   }
+
   ul {
     display: none;
   }
+
   .arrow span {
     border-bottom: 5px solid var(--bg-colorMobile);
     border-right: 5px solid var(--bg-colorMobile);
   }
+
   .he {
     left: 5vw;
     top: 10%;
@@ -644,9 +687,8 @@ img{
     display: none;
   }
 
-  #diag_layout2 {
-    display: none;
-  }
+ 
+
   .mudar-tema {
     margin-top: 2%;
     float: right;
@@ -682,12 +724,6 @@ img{
     left: -1%;
   }
 
-  .boxPrjchild1 {
-    margin: 0;
-    width: 80%;
-    left: 14%;
-  }
-
   .ptext {
     z-index: 2;
     color: var(--bg-colorMobile);
@@ -697,6 +733,7 @@ img{
     font-size: 0.5em;
     display: flex;
   }
+
   .hr-line {
     position: relative;
     margin-top: 25px;
@@ -706,15 +743,24 @@ img{
     display: inline;
     color: var(--bg-colorMobile);
   }
+
   .layoutScrollbox {
     transform: translate(-25%, 50%);
     width: 75vw;
   }
+
+  .boxPrjchild1 {
+    margin: 0;
+    width: 80%;
+    left: 14%;
+  }
+
   .boxPrjchild2 {
     margin: 0;
     width: 80%;
     left: 14%;
   }
+
   .boxPrjchild3 {
     margin: 0;
     width: 80%;
