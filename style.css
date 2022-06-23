@@ -551,8 +551,8 @@ img {
     overflow-x: hidden;
   }
   html {
-    overflow: hidden;
-    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
   }
   .vertical{display: none;}
