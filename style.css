@@ -515,14 +515,6 @@ img {
   filter: drop-shadow(5px 5px 5px var(--img-dropShadow));
 }
 
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-}
-
 @media only screen and (max-width: 480px) {
   #socialGallery {
     width: 120px;
@@ -544,19 +536,28 @@ img {
     display: inline;
   }
 }
+
 /* FOR MOBILE */
 @media only screen and (max-device-width: 430px) {
   body {
     font-size: 80px;
     overflow-x: hidden;
   }
+
   html {
     width: 100%;
     overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
   }
-  .vertical{display: none;}
-  .stickyicon-list{display: none;}
+
+  .vertical {
+    display: none;
+  }
+
+  .stickyicon-list {
+    display: none;
+  }
+
   .arrow {
     display: none;
   }
@@ -687,7 +688,7 @@ img {
     display: none;
   }
 
- 
+
 
   .mudar-tema {
     margin-top: 2%;

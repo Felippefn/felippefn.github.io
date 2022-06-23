@@ -1,7 +1,7 @@
 var colorHex = "#2b2d42";
 
 // add this rail gallery effect
-$(document).on('click', '#socialShare > .socialBox', function() {
+$(document).on('click', '#socialShare > .socialBox', function () {
 
   var self = $(this);
   var element = $('#socialGallery a');
@@ -16,27 +16,27 @@ $(document).on('click', '#socialShare > .socialBox', function() {
     self.addClass('open');
 
     TweenMax.staggerTo(element, 0.3, {
-        opacity: 1,
-        visibility: 'visible'
-      },
+      opacity: 1,
+      visibility: 'visible'
+    },
       0.075);
     TweenMax.staggerTo(element, 0.3, {
-        top: -12,
-        ease: Cubic.easeOut
-      },
+      top: -12,
+      ease: Cubic.easeOut
+    },
       0.075);
 
     TweenMax.staggerTo(element, 0.2, {
-        top: 0,
-        delay: 0.1,
-        ease: Cubic.easeOut,
-        onComplete: function() {
-          c++;
-          if (c >= element.length) {
-            self.removeClass('animate');
-          }
+      top: 0,
+      delay: 0.1,
+      ease: Cubic.easeOut,
+      onComplete: function () {
+        c++;
+        if (c >= element.length) {
+          self.removeClass('animate');
         }
-      },
+      }
+    },
       0.075);
 
     self.addClass('animate');
@@ -44,15 +44,15 @@ $(document).on('click', '#socialShare > .socialBox', function() {
   } else {
 
     TweenMax.staggerTo(element, 0.3, {
-        opacity: 0,
-        onComplete: function() {
-          c++;
-          if (c >= element.length) {
-            self.removeClass('open animate');
-            element.css('visibility', 'hidden');
-          };
-        }
-      },
+      opacity: 0,
+      onComplete: function () {
+        c++;
+        if (c >= element.length) {
+          self.removeClass('open animate');
+          element.css('visibility', 'hidden');
+        };
+      }
+    },
       0.075);
   }
 });
