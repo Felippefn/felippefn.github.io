@@ -125,24 +125,6 @@ h3 {
   --shadowPtrn: 1px 1px 1px rgba(0, 0, 0, 0.12), 2px 2px 2px rgba(0, 0, 0, 0.12),
     3px 3px 3px rgba(0, 0, 0, 0.12), 4px 4px 4px rgba(0, 0, 0, 0.12),
     0 8px 8px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.12);
-  --label-icon: url("https://caelum-online-public.s3.amazonaws.com/1369-alura-mais-dark-mode/sol.png");
-}
-
-.mudar-tema {
-  transition: ease-in-out 0.8s;
-  z-index: 2;
-  position: relative;
-  margin-top: 1%;
-  right: -2.5%;
-  float: right;
-  background-image: var(--label-icon);
-  background-repeat: no-repeat;
-  padding: 67px;
-  cursor: pointer;
-}
-
-#btn {
-  display: none;
 }
 
 .light-mode {
@@ -158,7 +140,6 @@ h3 {
   --bg-colorMobile2: white;
   --img-dropShadow: #ffffff6b;
   --bg-projectBox: rgba(0, 0, 0, 0.301);
-  --label-icon: url("https://img.icons8.com/external-bearicons-detailed-outline-bearicons/64/undefined/external-moon-halloween-bearicons-detailed-outline-bearicons.png");
 }
 
 @font-face {
@@ -204,7 +185,9 @@ h3 {
   font-size: 30%;
   margin-right: 5%;
   padding: 0;
-  position: fixed;
+  margin-top: 15px;
+  float: right;
+  position: relative;
   text-decoration: none;
 }
 
@@ -232,7 +215,7 @@ li {
   display: inline;
 }
 
-#home_pg {
+#Home {
   z-index: 4;
   top: -1%;
   left: 50%;
@@ -515,6 +498,73 @@ img {
   filter: drop-shadow(5px 5px 5px var(--img-dropShadow));
 }
 
+.switch {
+  position: relative;
+  display: flex;
+  width: 68px;
+  height: 38px;
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: grey;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+@keyframes going-dark {
+  100% {
+    -webkit-transform: translateX(28px);
+  }
+}
+
+@keyframes going-light {
+  0% {
+    -webkit-transform: translateX(28px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+  }
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 24px;
+  width: 24px;
+  left: 8px;
+  bottom: 7px;
+  background-color: white;
+  border-radius: 50%;
+  -webkit-animation: going-light 0.4s cubic-bezier(0.57, 1.52, 0.64, 1) normal;
+  -webkit-transition: 0.4s;
+  animation: going-light 0.4s cubic-bezier(0.57, 1.52, 0.64, 1) normal;
+  transition: 0.4s;
+}
+
+input:checked + .slider:before {
+  background-color: white;
+  -webkit-animation: going-dark 0.4s cubic-bezier(0.57, 1.52, 0.64, 1) forwards;
+  -webkit-transition: all 0.4s;
+  animation: going-dark 0.4s cubic-bezier(0.57, 1.52, 0.64, 1) forwards;
+  transition: all 0.4s;
+}
+
 @media only screen and (max-width: 480px) {
   #socialGallery {
     width: 120px;
@@ -564,15 +614,15 @@ img {
 
   #socialShare {
     width: 100%;
-    left: 26%;
-    top: 70%;
+    left: 30%;
+    top: 82vh;
     vertical-align: bottom;
     text-align: center;
     position: fixed;
   }
 
   #socialShare a,
-  #socialShare>.socialBox {
+  #socialShare > .socialBox {
     position: relative;
     float: none;
     display: inline-block;
@@ -591,7 +641,7 @@ img {
     background-color: rgba(0, 0, 0, 0.2);
   }
 
-  #socialShare>*>span {
+  #socialShare > * > span {
     background-color: rgba(0, 0, 0, 0.6);
     box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.15);
     display: block;
@@ -606,19 +656,19 @@ img {
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
     transform: scale(1);
-    -webkit-transition: all .35s ease-in-out;
-    -moz-transition: all .35s ease-in-out;
-    transition: all .35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
   }
 
-  #socialShare>*>span:hover,
-  #socialShare>.open>span {
+  #socialShare > * > span:hover,
+  #socialShare > .open > span {
     -webkit-transform: scale(1.25);
     -moz-transform: scale(1.25);
     transform: scale(1.25);
-    -webkit-transition: all .15s ease-in-out;
-    -moz-transition: all .15s ease-in-out;
-    transition: all .15s ease-in-out;
+    -webkit-transition: all 0.15s ease-in-out;
+    -moz-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
   }
 
   #socialGallery {
@@ -640,7 +690,7 @@ img {
     top: 10px;
   }
 
-  #socialGallery a>span {
+  #socialGallery a > span {
     position: relative;
     top: 4px;
     left: 4px;
@@ -654,15 +704,15 @@ img {
   }
 
   .pointer {
-    cursor: pointer
+    cursor: pointer;
   }
 
   .linkedin:hover {
-    background: #0e76a8 !important
+    background: #0e76a8 !important;
   }
 
   .github:hover {
-    background: #c9510c !important
+    background: #c9510c !important;
   }
 
   ul {
@@ -680,15 +730,13 @@ img {
   }
 
   .llo {
-    top: 18%;
+    top: 10%;
     left: 35vw;
   }
 
   #diag_layout {
     display: none;
   }
-
-
 
   .mudar-tema {
     margin-top: 2%;
@@ -766,5 +814,12 @@ img {
     margin: 0;
     width: 80%;
     left: 14%;
+  }
+}
+@media only screen and (max-device-width: 400px) {
+  #socialShare {
+    width: 100%;
+    left: 34%;
+    top: 75vh;
   }
 }
