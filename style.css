@@ -124,6 +124,7 @@ h3 {
   --dia-colorMobile: #2b2d424f;
   --bg-colorMobile: white;
   --bg-colorMobile2: #000505;
+  --var-textShadowHL: #3586bd;
   --img-dropShadow: rgba(0, 0, 0, 0.548);
   --bg-projectBox: rgba(255, 255, 255, 0.308);
   --shadowPtrn: 1px 1px 1px rgba(0, 0, 0, 0.12), 2px 2px 2px rgba(0, 0, 0, 0.12),
@@ -136,13 +137,14 @@ h3 {
   --bg-color-scroll2: rgba(255, 255, 255, 0.212);
   --yellow-color: #f68a3b;
   --bg-color: white;
-  --font-color: #2b2d42;
+  --font-color: #474747;
   --font-color-specs: black;
   --social-icon: #2b2d42;
   --dia-colorMobile: rgba(255, 255, 255, 0.178);
   --bg-colorMobile: #2b2d42;
   --bg-colorMobile2: white;
   --img-dropShadow: #ffffff6b;
+  --var-textShadowHL: #f6893b00;
   --bg-projectBox: rgba(0, 0, 0, 0.301);
 }
 
@@ -165,9 +167,6 @@ h3 {
 .full_name {
   z-index: 5;
   font-size: 30%;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.12), 2px 2px 2px rgba(0, 0, 0, 0.12),
-    3px 3px 3px rgba(0, 0, 0, 0.12), 4px 4px 4px rgba(0, 0, 0, 0.12),
-    0 8px 8px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.12);
   position: absolute;
   color: var(--yellow-color);
   margin: 0%;
@@ -178,6 +177,8 @@ h3 {
 .full_name:hover {
   cursor: none;
   color: var(--font-color);
+  text-shadow: 3px 3px 20px var(--var-textShadowHL),
+    -2px 1px 30px var(--var-textShadowHL);
 }
 
 .navBarv1 ul {
@@ -233,9 +234,8 @@ li {
   color: var(--font-color);
   /* color: #140021; */
   left: 15vw;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.12), 2px 2px 2px rgba(0, 0, 0, 0.12),
-    3px 3px 3px rgba(0, 0, 0, 0.12), 4px 4px 4px rgba(0, 0, 0, 0.12),
-    0 8px 8px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.12);
+  text-shadow: 3px 3px 20px var(--var-textShadowHL),
+    -2px 1px 30px var(--var-textShadowHL);
 }
 
 .llo {
@@ -245,9 +245,8 @@ li {
   color: var(--font-color);
   /* color: #140021; */
   left: 20vw;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.12), 2px 2px 2px rgba(0, 0, 0, 0.12),
-    3px 3px 3px rgba(0, 0, 0, 0.12), 4px 4px 4px rgba(0, 0, 0, 0.12),
-    0 8px 8px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.12);
+  text-shadow: 3px 3px 20px var(--var-textShadowHL),
+    -2px 1px 30px var(--var-textShadowHL);
 }
 
 #diag_layout {
@@ -398,9 +397,9 @@ li {
   height: 60vh;
   max-height: 60vh;
   display: -webkit-flex;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
-    0 4px 4px rgba(0, 0, 0, 0.11), 0 8px 8px rgba(0, 0, 0, 0.11),
-    0 16px 16px rgba(0, 0, 0, 0.11), 0 32px 32px rgba(0, 0, 0, 0.11);
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px,
+    rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px,
+    rgba(240, 46, 170, 0.05) 25px 25px;
 }
 
 .layoutScrollbox::-webkit-scrollbar {
@@ -471,8 +470,11 @@ li {
   height: 25vh;
   top: 15%;
   background-color: var(--bg-projectBox);
-  box-shadow: 0.5rem 0.5rem rgba(0, 0, 0, 0.137),
-    -0.5rem -0.5rem rgba(204, 204, 204, 0.199);
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 .boxPrjchild2 {
@@ -482,8 +484,11 @@ li {
   width: 40vw;
   height: 25vh;
   background-color: var(--bg-projectBox);
-  box-shadow: 0.5rem 0.5rem rgba(0, 0, 0, 0.137),
-    -0.5rem -0.5rem rgba(204, 204, 204, 0.199);
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 .boxPrjchild3 {
@@ -493,8 +498,11 @@ li {
   width: 40vw;
   height: 25vh;
   background-color: var(--bg-projectBox);
-  box-shadow: 0.5rem 0.5rem rgba(0, 0, 0, 0.137),
-    -0.5rem -0.5rem rgba(204, 204, 204, 0.199);
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 .circlePrj1 {
@@ -507,6 +515,7 @@ li {
   border-radius: 50%;
   background-color: white;
   transition: transform 250ms;
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
 }
 
 .circlePrj1:hover {
@@ -666,7 +675,7 @@ input:checked + .slider:before {
   #socialShare {
     width: 100%;
     left: 30%;
-    top: 82vh;
+    top: 80vh;
     vertical-align: bottom;
     text-align: center;
     position: fixed;
