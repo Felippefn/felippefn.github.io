@@ -508,7 +508,15 @@ li {
   background-color: var(--bg-projectBox);
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
-
+.PyContent1{
+  position: absolute;
+  margin: 0;
+  top: 0;
+  padding: 15px;
+  display: flex;
+  font-size: 0.2em;
+  font-weight: 300;
+}
 .boxPrjchild2 {
   position: absolute;
   border-radius: 15px;
@@ -518,7 +526,15 @@ li {
   background-color: var(--bg-projectBox);
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
-
+.JavaContent1{
+  position: absolute;
+  margin: 0;
+  top: 0;
+  padding: 15px;
+  display: flex;
+  font-size: 0.2em;
+  font-weight: 300;
+}
 .boxPrjchild3 {
   position: absolute;
   border-radius: 15px;
@@ -528,7 +544,15 @@ li {
   background-color: var(--bg-projectBox);
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
-
+.PyContent2{
+  position: absolute;
+  margin: 0;
+  top: 0;
+  padding: 15px;
+  display: flex;
+  font-size: 0.2em;
+  font-weight: 300;
+}
 .circlePrj1 {
   position: relative;
   border-radius: 15px;
@@ -549,6 +573,7 @@ li {
   /* Safari 3-8 */
   transform: scale(1.2);
 }
+
 
 img {
   -webkit-filter: drop-shadow(5px 5px 5px var(--img-dropShadow));
@@ -622,6 +647,15 @@ input:checked + .slider:before {
   transition: all 0.4s;
 }
 
+#Contact{
+  position: absolute;
+  left: 15%;
+  top: 200%;
+  width: 500px;
+  height: 500px;
+  color: #fff;
+  background-color: #fff;
+}
 
 @media only screen and (max-width: 480px) {
   #socialGallery {
@@ -672,8 +706,8 @@ input:checked + .slider:before {
 
   #socialShare {
     width: 100%;
-    left: 30%;
-    top: 80vh;
+    left: 32%;
+    top: 77.5vh;
     vertical-align: bottom;
     text-align: center;
     position: fixed;
