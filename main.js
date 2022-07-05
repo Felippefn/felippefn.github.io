@@ -1,5 +1,19 @@
 var colorHex = "#2b2d42";
 
+const button = document.querySelector('.button');
+button.addEventListener('click', function () {
+  button.classList.remove('button--default');
+  button.classList.add('button--process');
+  setTimeout(function () {
+    button.classList.remove('button--process');
+    button.classList.add('button--success');
+  }, 2000);
+  setTimeout(function () {
+    button.classList.remove('button--success');
+    button.classList.add('button--default');
+  }, 4500);
+})
+
 // add this rail gallery effect
 $(document).on('click', '#socialShare > .socialBox', function () {
 
