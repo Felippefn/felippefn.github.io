@@ -670,26 +670,106 @@ input:checked+.slider:before {
   top: 220%;
 }
 
+.ml11 {
+  color: var(--font-color);
+  font-weight: 700;
+  font-size: 0.45em;
+}
+
+.ml11 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+
+.ml11 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background-color: var(--font-color);
+  transform-origin: 0 50%;
+}
+
+.ml11 .line1 { 
+  top: 0; 
+  left: 0;
+}
+
+.ml11 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
 .layoutContacts {
-  width: 50%;
-  height: 60%;
+  width: 80vh;
+  height: 50vh;
   border-radius: 15px;
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.4) -5px 5px, rgba(0, 0, 0, 0.3) -10px 10px, rgba(0, 0, 0, 0.2) -15px 15px, rgba(0, 0, 0, 0.1) -20px 20px, rgba(0, 0, 0, 0.05) -25px 25px;
 }
 
+.rating_stars {
+  z-index: 5;
+  right: 35%;
+  margin-top: 20%;
+  display: inline;
+  font-size: 20px;
+  font-weight: 200;
+  color: #918f8f;
+  position: absolute;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 15px;
+}
+
+.rating_stars span .fa, .rating_stars span.active-low .fa-star-o, .rating_stars span.active-high .fa-star-o{
+display: none;
+}
+
+.rating_stars span .fa-star-o{
+display: inline-block;
+}
+
+.rating_stars span.s.active-high .fa-star{
+display: inline-block; color: #feb645;
+}
+
+.rating_stars span.s.active-low .fa-star-half-o{
+display: inline-block; color: #feb645;
+}
+
+.rating_stars span.r {
+position: absolute;
+top: 0;
+height: 20px;
+width: 10px;
+left: 0;
+}
+.rating_stars span.r.r0_5 {left:0px;}
+.rating_stars span.r.r1 {left:10px; width: 11px;}
+.rating_stars span.r.r1_5 {left:21px; width: 13px;}
+.rating_stars span.r.r2 {left:34px; width: 12px;}
+.rating_stars span.r.r2_5 {left:46px; width: 12px;}
+.rating_stars span.r.r3 {left:58px; width: 11px;}
+.rating_stars span.r.r3_5 {left:69px; width: 12px;}
+.rating_stars span.r.r4 {left:81px; width: 12px;}
+.rating_stars span.r.r4_5 {left:93px; width: 12px;}
+.rating_stars span.r.r5 {left:105px; width: 12px;}
+
+
 .wrapper {
   position: relative;
-  left: -5%;
+  top: 60%;
   display: flex;
-  width: 100vw;
-  height: 60vh;
-  align-items: flex-end;
-  justify-content: center;
+  justify-content: right;
 }
 
 .button {
   position: relative;
+  right: -20%;
   font-size: 0.2em;
   text-align: left;
   padding: 0.8em 1.4em;
@@ -842,17 +922,16 @@ input:checked+.slider:before {
 
 .endPage{
   position: absolute;
-    top: 300%;
-    width: 100%;
+  top: 300%;
+  width: 100%;
 }
 
 .alternateEnd{
-  padding-top: 15px;
   margin: 0;
   height: 10vh;
   width: 100%;
   background-color: var(--bg-color-end);
-  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
 }
 .centerContent{
   position: relative;
@@ -863,7 +942,6 @@ input:checked+.slider:before {
 .flex-center {
   font-size: 8%;
   padding-top: 1px;
-  padding-left: 200px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -952,10 +1030,25 @@ input:checked+.slider:before {
     display: none;
   }
 
+  #Contact {
+    top: 200%;
+  }
+
+  .layoutContacts {
+    margin-left: -5%;
+    margin-top: 50%;
+    width: 42vh;
+    height: 50vh;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  }
+  .wrapper {
+    right: 17.5%;
+    top:75%;
+  }
   #socialShare {
     width: 100%;
     left: 32%;
-    top: 77.5vh;
+    top: 73vh;
     vertical-align: bottom;
     text-align: center;
     position: fixed;
@@ -1118,7 +1211,7 @@ input:checked+.slider:before {
     z-index: 2;
     color: var(--bg-colorMobile);
     position: absolute;
-    top: 150%;
+    top: 110%;
     left: 2%;
     font-size: 0.5em;
     display: flex;
@@ -1133,10 +1226,21 @@ input:checked+.slider:before {
     display: inline;
     color: var(--bg-colorMobile);
   }
-
+  #Projects {
+    position: absolute;
+    left: 25%;
+    top: 85%;
+  }
   .layoutScrollbox {
     transform: translate(-25%, 50%);
     width: 75vw;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  }
+
+  .endPage{
+    position: absolute;
+    top: 290%;
+    width: 100%;
   }
 
   .boxPrjchild1 {

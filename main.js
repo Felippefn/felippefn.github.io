@@ -14,6 +14,74 @@ button.addEventListener('click', function () {
   }, 4500);
 })
 
+// Wrap every letter in a span
+var textWrapper = document.querySelector('.ml11 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml11 .line',
+    scaleY: [0,1],
+    opacity: [0.5,1],
+    easing: "easeOutExpo",
+    duration: 700
+  })
+  .add({
+    targets: '.ml11 .line',
+    translateX: [0, document.querySelector('.ml11 .letters').getBoundingClientRect().width + 10],
+    easing: "easeOutExpo",
+    duration: 700,
+    delay: 100
+  }).add({
+    targets: '.ml11 .letter',
+    opacity: [0,1],
+    easing: "easeOutExpo",
+    duration: 600,
+    offset: '-=775',
+    delay: (el, i) => 34 * (i+1)
+  }).add({
+    targets: '.ml11',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+
+jQuery(document).ready(function ($) {
+  $('.rating_stars span.r').hover(function () {
+    // get hovered value
+    var rating = $(this).data('rating');
+    var value = $(this).data('value');
+    $(this).parent().attr('class', '').addClass('rating_stars').addClass('rating_' + rating);
+    highlight_star(value);
+  }, function () {
+    // get hidden field value
+    var rating = $("#rating").val();
+    var value = $("#rating_val").val();
+    $(this).parent().attr('class', '').addClass('rating_stars').addClass('rating_' + rating);
+    highlight_star(value);
+  }).click(function () {
+    // Set hidden field value
+    var value = $(this).data('value');
+    $("#rating_val").val(value);
+
+    var rating = $(this).data('rating');
+    $("#rating").val(rating);
+
+    highlight_star(value);
+  });
+
+  var highlight_star = function (rating) {
+    $('.rating_stars span.s').each(function () {
+      var low = $(this).data('low');
+      var high = $(this).data('high');
+      $(this).removeClass('active-high').removeClass('active-low');
+      if (rating >= high) $(this).addClass('active-high');
+      else if (rating == low) $(this).addClass('active-low');
+    });
+  }
+});
+
 // add this rail gallery effect
 $(document).on('click', '#socialShare > .socialBox', function () {
 
@@ -72,9 +140,6 @@ $(document).on('click', '#socialShare > .socialBox', function () {
 });
 
 
-function animationFunction(x) {
-  x.classList.toggle("change");
-}
 document.querySelector("#btn").addEventListener("click", () => {
   document.body.classList.toggle("light-mode");
   setColor();
