@@ -671,25 +671,75 @@ input:checked+.slider:before {
 }
 
 .layoutContacts {
-  width: 50%;
-  height: 60%;
+  width: 80vh;
+  height: 50vh;
   border-radius: 15px;
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.4) -5px 5px, rgba(0, 0, 0, 0.3) -10px 10px, rgba(0, 0, 0, 0.2) -15px 15px, rgba(0, 0, 0, 0.1) -20px 20px, rgba(0, 0, 0, 0.05) -25px 25px;
 }
 
+.rating_stars {
+  z-index: 5;
+  right: 35%;
+  margin-top: 20%;
+  display: inline;
+  font-size: 20%;
+  font-weight: 200;
+  color: #918f8f;
+  position: absolute;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 15px;
+}
+
+.rating_stars span .fa, .rating_stars span.active-low .fa-star-o, .rating_stars span.active-high .fa-star-o{
+display: none;
+}
+
+.rating_stars span .fa-star-o{
+display: inline-block;
+}
+
+.rating_stars span.s.active-high .fa-star{
+display: inline-block; color: #feb645;
+}
+
+.rating_stars span.s.active-low .fa-star-half-o{
+display: inline-block; color: #feb645;
+}
+
+.rating_stars span.r {
+position: absolute;
+top: 0;
+height: 20px;
+width: 10px;
+left: 0;
+}
+
+.rating_stars span.r.r0_5 {left:0px;}
+.rating_stars span.r.r1 {left:10px; width: 11px;}
+.rating_stars span.r.r1_5 {left:21px; width: 13px;}
+.rating_stars span.r.r2 {left:34px; width: 12px;}
+.rating_stars span.r.r2_5 {left:46px; width: 12px;}
+.rating_stars span.r.r3 {left:58px; width: 11px;}
+.rating_stars span.r.r3_5 {left:69px; width: 12px;}
+.rating_stars span.r.r4 {left:81px; width: 12px;}
+.rating_stars span.r.r4_5 {left:93px; width: 12px;}
+.rating_stars span.r.r5 {left:105px; width: 12px;}
+
+
 .wrapper {
   position: relative;
+  height: 100%;
+  width: 100%;
   left: -5%;
   display: flex;
-  width: 100vw;
-  height: 60vh;
   align-items: flex-end;
-  justify-content: center;
+  justify-content: right;
 }
 
 .button {
   position: relative;
+  right: -20%;
   font-size: 0.2em;
   text-align: left;
   padding: 0.8em 1.4em;
@@ -852,7 +902,7 @@ input:checked+.slider:before {
   height: 10vh;
   width: 100%;
   background-color: var(--bg-color-end);
-  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
 }
 .centerContent{
   position: relative;
