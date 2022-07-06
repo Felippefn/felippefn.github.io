@@ -843,7 +843,6 @@ input:checked + .slider:before {
 .flex-center {
   font-size: 8%;
   padding-top: 1px;
-  padding-left: 200px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -895,15 +894,6 @@ input:checked + .slider:before {
 @media only screen and (min-height: 900px) {
   body {
     font-size: 130px;
-  }
-
-  .hr-line {
-    position: relative;
-    margin-top: 35px;
-    margin-right: 35px;
-    right: -2%;
-    width: 200px;
-    display: inline;
   }
 }
 
