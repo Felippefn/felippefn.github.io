@@ -121,6 +121,7 @@ h4{
   --neon-border-color: #08f;
   /*----------------*/
   --bg-color: #2b2d42;
+  --bg-color-end: #22232b;
   --bg-color-scroll: rgba(255, 255, 255, 0.212);
   --bg-color-scroll2: #2b2d424d;
   --font-color: white;
@@ -847,14 +848,17 @@ input:checked+.slider:before {
 
 .alternateEnd{
   padding-top: 15px;
-  padding-left: 25%;
-  text-align: left;
-  justify-content: left;
-  display: flex;
   margin: 0;
   height: 10vh;
   width: 100%;
-  background-color: var(--bg-color);
+  background-color: var(--bg-color-end);
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+}
+.centerContent{
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 .flex-center {
   font-size: 8%;
