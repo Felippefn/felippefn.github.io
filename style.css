@@ -669,7 +669,13 @@ input:checked+.slider:before {
   left: 10%;
   top: 220%;
 }
-
+#cttName{
+  font-family: cursive;
+  height: 5%;
+  width: 25%;
+  border-radius: 15px;
+  border-color: #000022;
+}
 .ml11 {
   color: var(--font-color);
   font-weight: 700;
@@ -1031,7 +1037,7 @@ left: 0;
   }
 
   #Contact {
-    top: 200%;
+    top: 205%;
   }
 
   .layoutContacts {
@@ -1042,8 +1048,8 @@ left: 0;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   }
   .wrapper {
-    right: 17.5%;
-    top:75%;
+    right: 18%;
+    top:35%;
   }
   #socialShare {
     width: 100%;
@@ -1153,11 +1159,6 @@ left: 0;
     display: none;
   }
 
-  .arrow span {
-    border-bottom: 5px solid var(--bg-colorMobile);
-    border-right: 5px solid var(--bg-colorMobile);
-  }
-
   .he {
     left: 5vw;
     top: 10%;
@@ -1217,15 +1218,6 @@ left: 0;
     display: flex;
   }
 
-  .hr-line {
-    position: relative;
-    margin-top: 25px;
-    margin-right: 35px;
-    right: -2%;
-    width: 160px;
-    display: inline;
-    color: var(--bg-colorMobile);
-  }
   #Projects {
     position: absolute;
     left: 25%;
@@ -1239,7 +1231,7 @@ left: 0;
 
   .endPage{
     position: absolute;
-    top: 290%;
+    top: 315%;
     width: 100%;
   }
 
