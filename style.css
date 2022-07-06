@@ -1016,15 +1016,6 @@ input:checked + .slider:before {
   body {
     font-size: 130px;
   }
-
-  .hr-line {
-    position: relative;
-    margin-top: 35px;
-    margin-right: 35px;
-    right: -2%;
-    width: 200px;
-    display: inline;
-  }
 }
 
 /* FOR MOBILE */
