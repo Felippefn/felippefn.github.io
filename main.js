@@ -107,9 +107,6 @@ $(document).on('click', '#socialShare > .socialBox', function () {
 });
 
 
-function animationFunction(x) {
-  x.classList.toggle("change");
-}
 document.querySelector("#btn").addEventListener("click", () => {
   document.body.classList.toggle("light-mode");
   setColor();
