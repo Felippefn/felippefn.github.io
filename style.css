@@ -1360,7 +1360,9 @@ button {
 }
 
 /* FOR MOBILE */
-@media only screen and (max-height: 899px) and (min-device-width: 400px) {
+@media only screen and (min-device-height: 780px)
+and (max-device-height: 899px) 
+and (min-device-width: 401px) {
   body {
     font-size: 80px;
     overflow-x: hidden;
@@ -1600,7 +1602,7 @@ button {
   }
 }
 
-@media only screen and (max-device-width: 400px) and (max-device-height: 700px) {
+@media only screen and (max-device-width: 399px) and (max-device-height: 860px) {
   #socialShare {
     width: 100%;
     left: 34%;
