@@ -28,7 +28,7 @@ anime.timeline({loop: true})
   })
   .add({
     targets: '.ml11 .line',
-    translateX: [0, document.querySelector('.ml11 .letters').getBoundingClientRect().width + 10],
+    translateX: [0, document.querySelector('.ml11 .letters').getBoundingClientRect().width + 50],
     easing: "easeOutExpo",
     duration: 700,
     delay: 100
