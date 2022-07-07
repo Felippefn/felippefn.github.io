@@ -36,21 +36,23 @@
     </nav>
     <p class="full_name">Felippe Nagy</p>
     <div class="menu">
-        <div id="diag_layout"></div>
-        <div id="Home"></div>
-        <div id="he_w" class="he">
-            <p>HE</p>
-        </div>
-        <div id="llo_w" class="llo">
-            <p>LLO,</p>
-        </div>
-        <div id="words">
-            <h2 class="intro">my name is</h2>
-            <h1 class="name">Felippe.</h1>
-            <h3 class="specs">I am a programmer and robotics lover.<br>
-                Located in Sao Paulo, Brazil.<br>
-                Today working with Python and Java applications.
-            </h3>
+        <div class="responsiveContent">
+            <div id="diag_layout"></div>
+            <div id="Home"></div>
+            <div id="he_w" class="he">
+                <p>HE</p>
+            </div>
+            <div id="llo_w" class="llo">
+                <p>LLO,</p>
+            </div>
+            <div id="words">
+                <h2 class="intro">my name is</h2>
+                <h1 class="name">Felippe.</h1>
+                <h3 class="specs">I am a programmer and robotics lover.<br>
+                    Located in Sao Paulo, Brazil.<br>
+                    Today working with Python and Java applications.
+                </h3>
+            </div>
         </div>
         <div class="boxapps">
             <div class="vertical">
@@ -65,124 +67,147 @@
                 </div>
             </div>
         </div>
-    </div>
-    <span id="ptext2"class="ptext">Projects
-        <!-- <hr class="hr-line"> -->
-    </span>
-    <div id="Projects" class="boxPrj">
-        <div class="layoutScrollbox">
-            <div id="boxChild1" class="boxPrjchild1">
-                <div class="circlePrj1">
-                    <img src="https://cdn.discordapp.com/attachments/415958635802263552/989155642226929764/icons8-python-100.png"
-                        alt="python" height="100" width="100">
-                </div>
-                <p class="PyContent1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse id, rem praesentium
-                    magnam, officia modi quis officiis magni voluptate nobis delectus beatae? Pariatur nisi impedit
-                    deserunt unde amet ex sequi!</p>
-            </div>
-            <div id="boxChild2" class="boxPrjchild2">
-                <div class="circlePrj1">
-                    <img src="https://cdn.discordapp.com/attachments/415958635802263552/989155283383238726/icons8-java-100.png"
-                        alt="java" height="100" width="100">
-                </div>
-                <p class="JavaContent1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse id, rem
-                    praesentium magnam, officia modi quis officiis magni voluptate nobis delectus beatae? Pariatur nisi
-                    impedit deserunt unde amet ex sequi!</p>
-            </div>
-            <div id="boxChild3" class="boxPrjchild3">
-                <div class="circlePrj1">
-                    <img src="https://cdn.discordapp.com/attachments/415958635802263552/989155642226929764/icons8-python-100.png"
-                        alt="python" height="100" width="100">
-                </div>
-                <p class="PyContent2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse id, rem praesentium
-                    magnam, officia modi quis officiis magni voluptate nobis delectus beatae? Pariatur nisi impedit
-                    deserunt unde amet ex sequi!</p>
-            </div>
-        </div>
-    </div>
-    <div id="Contact">
-        <p class="ml11">
-            <span class="text-wrapper">
-              <span class="line line1"></span>
-              <span class="letters">Contact me</span>
-            </span>
-        </p>
-        <div class="layoutContacts">
-            <input type="text" id="cttName" name="cttName">
-            <input type="text" id="cttSubject" name="cttSubject">
-            <input type="text" id="cttText" name="cttText">
-            <input type="email" id="cttEmail" name="cttEmail">
-            <span class="rating_stars rating_0">
-                <span class='s' data-low='0.5' data-high='1'><i class="fa fa-star-o"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star"></i></span>
-                <span class='s' data-low='1.5' data-high='2'><i class="fa fa-star-o"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star"></i></span>
-                <span class='s' data-low='2.5' data-high='3'><i class="fa fa-star-o"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star"></i></span>
-                <span class='s' data-low='3.5' data-high='4'><i class="fa fa-star-o"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star"></i></span>
-                <span class='s' data-low='4.5' data-high='5'><i class="fa fa-star-o"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star"></i></span>                  
-                <span class='r r0_5' data-rating='1' data-value='0.5'></span>
-                <span class='r r1' data-rating='1' data-value='1'></span>
-                <span class='r r1_5' data-rating='15' data-value='1.5'></span>
-                <span class='r r2' data-rating='2' data-value='2'></span>
-                <span class='r r2_5' data-rating='25' data-value='2.5'></span>
-                <span class='r r3' data-rating='3' data-value='3'></span>
-                <span class='r r3_5' data-rating='35' data-value='3.5'></span>
-                <span class='r r4' data-rating='4' data-value='4'></span>
-                <span class='r r4_5' data-rating='45' data-value='4.5'></span>
-                <span class='r r5' data-rating='5' data-value='5'></span>
-            </span>
-            <div class="wrapper">
-                <button class="button button--default">
-                    <div class="button__icon-wrapper">
-                        <div class="button__icon"></div>
+        <span id="ptext2" class="ptext">Projects
+            <!-- <hr class="hr-line"> -->
+        </span>
+        <div id="Projects" class="boxPrj">
+            <div class="layoutScrollbox">
+                <div id="boxChild1" class="boxPrjchild1">
+                    <div class="circlePrj1">
+                        <img src="https://cdn.discordapp.com/attachments/415958635802263552/989155642226929764/icons8-python-100.png"
+                            alt="python" height="100" width="100">
                     </div>
-                    <div class="button__text-wrapper">
-                        <div class="button__text button__text--default">
-                            Send
-                        </div>
-                        <div class="button__text button__text--process">
-                            Cancel
-                        </div>
-                        <div class="button__text button__text--success">
-                            Sent!
-                        </div>
+                    <p class="PyContent1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse id, rem
+                        praesentium
+                        magnam, officia modi quis officiis magni voluptate nobis delectus beatae? Pariatur nisi impedit
+                        deserunt unde amet ex sequi!</p>
+                </div>
+                <div id="boxChild2" class="boxPrjchild2">
+                    <div class="circlePrj1">
+                        <img src="https://cdn.discordapp.com/attachments/415958635802263552/989155283383238726/icons8-java-100.png"
+                            alt="java" height="100" width="100">
                     </div>
-                </button>
-            </div>
-        </div>
-    </div>
-    <div class="arrow">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-    <div id="socialShare">
-        <div class="socialBox pointer">
-            <span class="fa fa-share-alt"></span>
-            <div id="socialGallery">
-                <div class="socialToolBox">
-                    <a class="linkedin" href="https://www.linkedin.com/in/felippefn/"><i class="fa fa-linkedin"></i></a>
-                    <a class="github" href="https://github.com/Felippefn"><i class="fa fa-github"></i></a>
+                    <p class="JavaContent1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse id, rem
+                        praesentium magnam, officia modi quis officiis magni voluptate nobis delectus beatae? Pariatur
+                        nisi
+                        impedit deserunt unde amet ex sequi!</p>
+                </div>
+                <div id="boxChild3" class="boxPrjchild3">
+                    <div class="circlePrj1">
+                        <img src="https://cdn.discordapp.com/attachments/415958635802263552/989155642226929764/icons8-python-100.png"
+                            alt="python" height="100" width="100">
+                    </div>
+                    <p class="PyContent2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse id, rem
+                        praesentium
+                        magnam, officia modi quis officiis magni voluptate nobis delectus beatae? Pariatur nisi impedit
+                        deserunt unde amet ex sequi!</p>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="endPage">
-        <div class="alternateEnd">
-            <div class="centerContent">
-                <h4>Felippe Nagy © 2022</h4>
-                <div class="flex-center">
-                    <a class="github" href="https://github.com/Felippefn">
-                        <i class="fa fa-github fa-4x icon-3d"></i>
-                    </a>
-                    <a class="linkedin" href="https://www.linkedin.com/in/felippefn/">
-                        <i class="fa fa-linkedin fa-4x icon-3d"></i>
-                    </a>
-                    <a href="mailto:felippenagy@outlook.com?subject=Mail from Our Site">
-                        <i class="fa fa-envelope fa-4x icon-3d"></i>
-                    </a>
+        <div id="Contact">
+            <p class="ml11">
+                <span class="text-wrapper">
+                    <span class="line line1"></span>
+                    <span class="letters">Contact me</span>
+                </span>
+            </p>
+            <div class="layoutContacts">
+                <div class="asasa">
+
+                    <div class="demo-flex-spacer"></div>
+
+                    <div class="webflow-style-input">
+                        <input class="" type="email" placeholder="What's your email?"></input>
+                        <!-- <button type="submit"><i class="icon ion-android-arrow-forward"></i></button> -->
+                    </div>
+                    <div class="webflow-style-input">
+                        <input class="" type="text" placeholder="Enter your name" name="cttName"></input>
+                    </div>
+                    <div class="webflow-style-input">
+                        <input class="" type="text" placeholder="Enter the subject" name="cttSubject"></input>
+                    </div>
+                    <div class="webflow-style-input">
+                        <input class="" type="text" placeholder="Enter your text" name="cttText"></input>
+                    </div>
+                    <div class="demo-flex-spacer"></div>
+                </div>
+                <span class="rating_stars rating_0">
+                    <span class='s' data-low='0.5' data-high='1'><i class="fa fa-star-o"></i><i
+                            class="fa fa-star-half-o"></i><i class="fa fa-star"></i></span>
+                    <span class='s' data-low='1.5' data-high='2'><i class="fa fa-star-o"></i><i
+                            class="fa fa-star-half-o"></i><i class="fa fa-star"></i></span>
+                    <span class='s' data-low='2.5' data-high='3'><i class="fa fa-star-o"></i><i
+                            class="fa fa-star-half-o"></i><i class="fa fa-star"></i></span>
+                    <span class='s' data-low='3.5' data-high='4'><i class="fa fa-star-o"></i><i
+                            class="fa fa-star-half-o"></i><i class="fa fa-star"></i></span>
+                    <span class='s' data-low='4.5' data-high='5'><i class="fa fa-star-o"></i><i
+                            class="fa fa-star-half-o"></i><i class="fa fa-star"></i></span>
+                    <span class='r r0_5' data-rating='1' data-value='0.5'></span>
+                    <span class='r r1' data-rating='1' data-value='1'></span>
+                    <span class='r r1_5' data-rating='15' data-value='1.5'></span>
+                    <span class='r r2' data-rating='2' data-value='2'></span>
+                    <span class='r r2_5' data-rating='25' data-value='2.5'></span>
+                    <span class='r r3' data-rating='3' data-value='3'></span>
+                    <span class='r r3_5' data-rating='35' data-value='3.5'></span>
+                    <span class='r r4' data-rating='4' data-value='4'></span>
+                    <span class='r r4_5' data-rating='45' data-value='4.5'></span>
+                    <span class='r r5' data-rating='5' data-value='5'></span>
+                </span>
+                <div class="wrapper">
+                    <button class="button button--default">
+                        <div class="button__icon-wrapper">
+                            <div class="button__icon"></div>
+                        </div>
+                        <div class="button__text-wrapper">
+                            <div class="button__text button__text--default">
+                                Send
+                            </div>
+                            <div class="button__text button__text--process">
+                                Cancel
+                            </div>
+                            <div class="button__text button__text--success">
+                                Sent!
+                            </div>
+                        </div>
+                    </button>
                 </div>
             </div>
         </div>
-    </div>
+        <div class="arrow">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div id="socialShare">
+            <div class="socialBox pointer">
+                <span class="fa fa-share-alt"></span>
+                <div id="socialGallery">
+                    <div class="socialToolBox">
+                        <a class="linkedin" href="https://www.linkedin.com/in/felippefn/"><i
+                                class="fa fa-linkedin"></i></a>
+                        <a class="github" href="https://github.com/Felippefn"><i class="fa fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="endPage">
+            <div class="alternateEnd">
+                <div class="centerContent">
+                    <h4>Felippe Nagy © 2022</h4>
+                    <div class="flex-center">
+                        <a class="github" href="https://github.com/Felippefn">
+                            <i class="fa fa-github fa-4x icon-3d"></i>
+                        </a>
+                        <a class="linkedin" href="https://www.linkedin.com/in/felippefn/">
+                            <i class="fa fa-linkedin fa-4x icon-3d"></i>
+                        </a>
+                        <a href="mailto:felippenagy@outlook.com?subject=Mail from Our Site">
+                            <i class="fa fa-envelope fa-4x icon-3d"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
 </body>
 <script src='main.js'></script>
 
