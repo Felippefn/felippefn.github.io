@@ -749,8 +749,20 @@ button {
 
 .webflow-style-input:nth-child(2){
   position: relative;
-  top: 20%;
+  margin-top: 1%;
   right: 20%;
+}
+.webflow-style-input:nth-child(3){
+  position: relative;
+  left: 20%;
+}
+.webflow-style-input:nth-child(4){
+  position: relative;
+  right: 20%;
+}
+.webflow-style-input:nth-child(5){
+  position: relative;
+  left: 20%;
 }
 
 .ml11 {
@@ -803,13 +815,14 @@ button {
 
 .rating_stars {
   z-index: 5;
-  right: 35%;
-  margin-top: 20%;
+  float: right;
+  right: 10%;
+  margin-top: 0%;
   display: inline;
   font-size: 20px;
   font-weight: 200;
   color: #918f8f;
-  position: absolute;
+  position: relative;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 15px;
 }
@@ -885,7 +898,7 @@ button {
   position: relative;
   align-items: flex-end;
   display: block;
-  top: 20%;
+  top: 15%;
   float: right;
 }
 
