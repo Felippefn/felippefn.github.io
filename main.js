@@ -1,5 +1,27 @@
 var colorHex = "#2b2d42";
 
+var settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "https://api.nasa.gov/planetary/apod?api_key=PbyspaiHSuGvIKoFPLiEwGMBnonFF0YwgVobhqMv",
+  "method": "GET"
+}
+
+$.ajax(settings).done(function (response) {
+  console.log(response.url);
+  var content = response.url;
+  $("#myUrl").attr('src', content);
+});
+
+// document.addEventListener("click", function (event) {
+//   // Checking if the button was clicked
+//   if (!event.target.matches("#button_request")) return;
+//   fetch("https://api.nasa.gov/planetary/apod?api_key=PbyspaiHSuGvIKoFPLiEwGMBnonFF0YwgVobhqMv")
+//     .then((response) => response.json())
+//     .then((data) => console.log(data.url));
+//   console.log("Button was clicked!");
+// });
+
 const button = document.querySelector('.button');
 button.addEventListener('click', function () {
   button.classList.remove('button--default');

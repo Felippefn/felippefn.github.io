@@ -169,6 +169,7 @@ h4 {
   font-weight: normal;
   font-style: normal;
 }
+
 .full_name {
   z-index: 5;
   font-size: 30%;
@@ -178,6 +179,7 @@ h4 {
   top: 3%;
   left: 2%;
 }
+
 .full_name:hover {
   cursor: none;
   color: var(--font-color);
@@ -200,11 +202,15 @@ h4 {
   text-decoration: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 a:visited {
   text-decoration: none;
 }
 
-a {
+.navBarv1 a {
   padding-left: 15px;
   opacity: 5;
   transition: 0.3s;
@@ -638,7 +644,7 @@ img {
   transition: 0.4s;
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
   background-color: white;
   -webkit-animation: going-dark 0.4s cubic-bezier(0.57, 1.52, 0.64, 1) forwards;
   -webkit-transition: all 0.4s;
@@ -651,9 +657,35 @@ input:checked + .slider:before {
   left: 10%;
   top: 220%;
 }
+
+#boxNASA {
+  position: absolute;
+  top: 200%;
+  right: 5%;
+}
+
+#setup {
+  position: relative;
+  float: right;
+  right: -55%;
+}
+
+#setup_words {
+  text-transform: uppercase;
+  font-size: 25px;
+  color: var(--font-color);
+  text-align: left;
+}
+
+#myUrl {
+  height: 30%;
+  width: 30%;
+  border-radius: 15px;
+}
+
 #cttName {
   letter-spacing: 1px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding: 0.5rem 1.1rem;
   background-color: #010113;
   height: 5%;
@@ -668,7 +700,9 @@ input:checked + .slider:before {
   color: whitesmoke;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -696,6 +730,7 @@ button {
   0% {
     background-position: 0 0;
   }
+
   100% {
     background-position: 100% 0;
   }
@@ -705,10 +740,12 @@ button {
   0% {
     background-position: 0 0;
   }
+
   100% {
     background-position: 100% 0;
   }
 }
+
 .webflow-style-input {
   position: relative;
   display: flex;
@@ -720,6 +757,7 @@ button {
   padding: 14px 20px 16px;
   background: rgba(57, 63, 84, 0.8);
 }
+
 .webflow-style-input:after {
   content: "";
   position: absolute;
@@ -734,7 +772,7 @@ button {
   background: linear-gradient(to right, #B294FF, #57E6E6, #FEFFB8, #57E6E6, #B294FF, #57E6E6);
   background-size: 500% auto;
   -webkit-animation: gradient 3s linear infinite;
-          animation: gradient 3s linear infinite;
+  animation: gradient 3s linear infinite;
 }
 
 .webflow-style-input input {
@@ -743,24 +781,28 @@ button {
   font-size: 0.85rem;
   vertical-align: middle;
 }
+
 .webflow-style-input input::-webkit-input-placeholder {
   color: #7881A1;
 }
 
-.webflow-style-input:nth-child(2){
+.webflow-style-input:nth-child(2) {
   position: relative;
   margin-top: 1%;
   right: 20%;
 }
-.webflow-style-input:nth-child(3){
+
+.webflow-style-input:nth-child(3) {
   position: relative;
   left: 20%;
 }
-.webflow-style-input:nth-child(4){
+
+.webflow-style-input:nth-child(4) {
   position: relative;
   right: 20%;
 }
-.webflow-style-input:nth-child(5){
+
+.webflow-style-input:nth-child(5) {
   position: relative;
   left: 20%;
 }
@@ -854,41 +896,51 @@ button {
   width: 10px;
   left: 0;
 }
+
 .rating_stars span.r.r0_5 {
   left: 0px;
 }
+
 .rating_stars span.r.r1 {
   left: 10px;
   width: 11px;
 }
+
 .rating_stars span.r.r1_5 {
   left: 21px;
   width: 13px;
 }
+
 .rating_stars span.r.r2 {
   left: 34px;
   width: 12px;
 }
+
 .rating_stars span.r.r2_5 {
   left: 46px;
   width: 12px;
 }
+
 .rating_stars span.r.r3 {
   left: 58px;
   width: 11px;
 }
+
 .rating_stars span.r.r3_5 {
   left: 69px;
   width: 12px;
 }
+
 .rating_stars span.r.r4 {
   left: 81px;
   width: 12px;
 }
+
 .rating_stars span.r.r4_5 {
   left: 93px;
   width: 12px;
 }
+
 .rating_stars span.r.r5 {
   left: 105px;
   width: 12px;
@@ -1068,12 +1120,14 @@ button {
   background-color: var(--bg-color-end);
   box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
 }
+
 .centerContent {
   position: relative;
   align-items: center;
   justify-content: center;
   display: flex;
 }
+
 .flex-center {
   font-size: 8%;
   padding-top: 1px;
@@ -1090,29 +1144,36 @@ button {
   -ms-flex-align: center;
   align-items: center;
 }
+
 .icon-3d {
   padding: 10px;
   -webkit-animation: icon3d 200ms 10;
   animation: icon3d 200ms 10;
   color: #fff;
 }
+
 .icon-3d:hover {
   -webkit-animation: icon3d 200ms infinite;
   animation: icon3d 200ms infinite;
 }
+
 @keyframes icon3d {
   0% {
     text-shadow: 5px 4px rgba(244, 67, 54, 1), -5px -6px rgba(33, 150, 243, 1);
   }
+
   25% {
     text-shadow: -5px -6px rgba(244, 67, 54, 1), 5px 4px rgba(33, 150, 243, 1);
   }
+
   50% {
     text-shadow: 5px -4px rgba(244, 67, 54, 1), -8px 4px rgba(33, 150, 243, 1);
   }
+
   75% {
     text-shadow: -8px -4px rgba(244, 67, 54, 1), -5px -4px rgba(33, 150, 243, 1);
   }
+
   100% {
     text-shadow: -5px 0 rgba(244, 67, 54, 1), 5px -4px rgba(33, 150, 243, 1);
   }
@@ -1130,6 +1191,10 @@ button {
     -webkit-overflow-scrolling: touch;
   }
 
+  #myUrl {
+    display: none;
+  }
+
   .vertical {
     display: none;
   }
@@ -1145,6 +1210,7 @@ button {
   #Contact {
     top: 210%;
   }
+
   .layoutContacts {
     margin-left: -5%;
     margin-top: 50%;
@@ -1152,10 +1218,12 @@ button {
     height: 50vh;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   }
+
   .wrapper {
     right: 10.5%;
     top: 25%;
   }
+
   #socialShare {
     width: 100%;
     left: 32%;
@@ -1166,7 +1234,7 @@ button {
   }
 
   #socialShare a,
-  #socialShare > .socialBox {
+  #socialShare>.socialBox {
     position: relative;
     float: none;
     display: inline-block;
@@ -1185,7 +1253,7 @@ button {
     background-color: rgba(0, 0, 0, 0.2);
   }
 
-  #socialShare > * > span {
+  #socialShare>*>span {
     background-color: #13293d;
     box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.15);
     display: block;
@@ -1205,8 +1273,8 @@ button {
     transition: all 0.35s ease-in-out;
   }
 
-  #socialShare > * > span:hover,
-  #socialShare > .open > span {
+  #socialShare>*>span:hover,
+  #socialShare>.open>span {
     -webkit-transform: scale(1.25);
     -moz-transform: scale(1.25);
     transform: scale(1.25);
@@ -1234,7 +1302,7 @@ button {
     top: 10px;
   }
 
-  #socialGallery a > span {
+  #socialGallery a>span {
     position: relative;
     top: 4px;
     left: 4px;
@@ -1326,9 +1394,10 @@ button {
     left: 25%;
     top: 85%;
   }
+
   .layoutScrollbox {
     transform: translate(-25%, 50%);
-    width: 75vw;
+    width: 85vw;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   }
 
@@ -1366,15 +1435,14 @@ button {
   body {
     font-size: 130px;
   }
+
   .wrapper {
     top: 47%;
   }
 }
 
 /* FOR MOBILE */
-@media only screen and (min-device-height: 780px)
-and (max-device-height: 899px) 
-and (min-device-width: 401px) {
+@media only screen and (min-device-height: 780px) and (max-device-height: 899px) and (min-device-width: 401px) {
   body {
     font-size: 80px;
     overflow-x: hidden;
@@ -1384,6 +1452,14 @@ and (min-device-width: 401px) {
     width: 100%;
     overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
+  }
+
+  #myUrl {
+    display: none;
+  }
+
+  #setup_words {
+    display: none;
   }
 
   .vertical {
@@ -1409,10 +1485,12 @@ and (min-device-width: 401px) {
     height: 50vh;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   }
+
   .wrapper {
     right: 10.5%;
     top: 50%;
   }
+
   #socialShare {
     width: 100%;
     left: 32%;
@@ -1423,7 +1501,7 @@ and (min-device-width: 401px) {
   }
 
   #socialShare a,
-  #socialShare > .socialBox {
+  #socialShare>.socialBox {
     position: relative;
     float: none;
     display: inline-block;
@@ -1442,7 +1520,7 @@ and (min-device-width: 401px) {
     background-color: rgba(0, 0, 0, 0.2);
   }
 
-  #socialShare > * > span {
+  #socialShare>*>span {
     background-color: #13293d;
     box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.15);
     display: block;
@@ -1462,8 +1540,8 @@ and (min-device-width: 401px) {
     transition: all 0.35s ease-in-out;
   }
 
-  #socialShare > * > span:hover,
-  #socialShare > .open > span {
+  #socialShare>*>span:hover,
+  #socialShare>.open>span {
     -webkit-transform: scale(1.25);
     -moz-transform: scale(1.25);
     transform: scale(1.25);
@@ -1491,7 +1569,7 @@ and (min-device-width: 401px) {
     top: 10px;
   }
 
-  #socialGallery a > span {
+  #socialGallery a>span {
     position: relative;
     top: 4px;
     left: 4px;
@@ -1583,6 +1661,7 @@ and (min-device-width: 401px) {
     left: 25%;
     top: 85%;
   }
+
   .layoutScrollbox {
     transform: translate(-25%, 50%);
     width: 75vw;
@@ -1620,36 +1699,45 @@ and (min-device-width: 401px) {
     left: 34%;
     top: 70vh;
   }
+
   .layoutContacts {
     width: 50vh;
     height: 60vh;
   }
+
   .wrapper {
     right: 18%;
-    top:30%;
+    top: 30%;
   }
-  .endPage{
+
+  .endPage {
     top: 320%;
     width: 100%;
   }
+
   .navBarv1 ul {
     display: none;
   }
+
   .full_name {
     margin-top: 5%;
     position: relative;
   }
+
   .he {
     position: relative;
     margin-top: 20%;
   }
+
   .llo {
     position: relative;
     margin-top: -41%;
   }
+
   .layoutContacts {
     width: 98%;
   }
+
   #words {
     z-index: 9;
     position: relative;
@@ -1658,6 +1746,7 @@ and (min-device-width: 401px) {
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
       rgb(209, 213, 219) 0px 0px 0px 1px inset;
   }
+
   .wrapper {
     position: relative;
     top: 10%;
